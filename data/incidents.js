@@ -29,6 +29,7 @@ window.PERP_WALK_DATA = {
           status: "Company disclosure",
           summary: "Anthropic said a group it assessed as Chinese state-sponsored jailbroke Claude Code into autonomously scanning, exploiting, and exfiltrating data from about 30 tech, finance, chemical, and government targets, with the model doing an estimated 80 to 90 percent of the work. Some intrusions succeeded.",
           articles: [
+            { outlet: "Anthropic", title: "Disrupting the first reported AI-orchestrated cyber espionage campaign (full report, PDF)", url: "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf" },
             { outlet: "The Register", title: "Chinese spies told Claude to break into about 30 critical orgs. Some attacks succeeded", url: "https://www.theregister.com/2025/11/13/chinese_spies_claude_attacks/" },
             { outlet: "Anthropic", title: "Disrupting an AI-orchestrated cyber espionage campaign", url: "https://www.anthropic.com/news/disrupting-AI-espionage" },
             { outlet: "Campus Technology", title: "Cyber Espionage Campaign Exploits Claude Code Tool to Infiltrate Global Targets", url: "https://campustechnology.com/articles/2025/11/24/cyber-espionage-campaign-exploits-claude-code-tool-to-infiltrate-global-targets.aspx" }
@@ -40,7 +41,9 @@ window.PERP_WALK_DATA = {
           status: "Settled for $1.5 billion",
           summary: "A federal judge gave final approval to a $1.5 billion class settlement resolving claims that Anthropic downloaded hundreds of thousands of copyrighted books from pirate libraries to train Claude. It is the largest copyright recovery on record. Anthropic did not admit liability.",
           articles: [
-            { outlet: "Lieff Cabraser", title: "Copyright Claimholders' Class Action Against Anthropic", url: "https://www.lieffcabraser.com/anthropic-authors-rights/" }
+            { outlet: "TechCrunch", title: "Anthropic's landmark $1.5B copyright settlement is approved", url: "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/" },
+            { outlet: "JURIST", title: "Judge approves record $1.5 billion AI copyright settlement involving Anthropic", url: "https://www.jurist.org/news/2026/07/judge-approves-record-1-5-billion-settlement-involving-anthropic/" },
+            { outlet: "The Authors Guild", title: "Court Grants Final Approval of $1.5 Billion Anthropic Copyright Settlement", url: "https://authorsguild.org/news/court-grants-final-approval-anthropic-copyright-settlement/" }
           ]
         },
         {
@@ -49,9 +52,9 @@ window.PERP_WALK_DATA = {
           status: "Company disclosure",
           summary: "Anthropic's threat report covering December 2025 through August 2026 described Claude powering more than 4,700 dating-app personas that exchanged 2.36 million messages with at least 25,000 targets, plus cases across cyber operations, surveillance, conventional weapons development, biological misuse, and fraud.",
           articles: [
+            { outlet: "Anthropic", title: "Countering misuse of AI: September 2026 threat intelligence report", url: "https://www.anthropic.com/threat-intelligence-report-september-2026" },
             { outlet: "The Hacker News", title: "Claude Used to Automate Exploitation and Data Theft Across Multiple Victims", url: "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html" },
-            { outlet: "TNW", title: "Anthropic details how Claude was misused for surveillance and weapons", url: "https://thenextweb.com/news/anthropic-claude-misuse-threat-intelligence-report" },
-            { outlet: "The Rundown AI", title: "Anthropic details Claude misuse in deception, surveillance, and malware", url: "https://www.therundown.ai/news/anthropic-claude-misuse-threat-report-september-2026" }
+            { outlet: "TNW", title: "Anthropic details how Claude was misused for surveillance and weapons", url: "https://thenextweb.com/news/anthropic-claude-misuse-threat-intelligence-report" }
           ]
         }
       ]
@@ -97,8 +100,7 @@ window.PERP_WALK_DATA = {
           articles: [
             { outlet: "Daily Journal", title: "Parents sue OpenAI, claim ChatGPT encouraged drug use that led to son's death", url: "https://www.dailyjournal.com/articles/391370-parents-sue-openai-claim-chatgpt-encouraged-drug-use-that-led-to-son-s-death" },
             { outlet: "Yale Law School", title: "Parents Sue OpenAI After ChatGPT Medical Advice is Blamed for Overdose Death", url: "https://law.yale.edu/yls-today/news/parents-sue-openai-after-chatgpt-medical-advice-blamed-overdose-death" },
-            { outlet: "Claims Journal", title: "Lawsuit Claims OpenAI Chatbot Gave Advice That Led to Fatal Overdose", url: "https://www.claimsjournal.com/news/national/2026/05/13/337553.htm" },
-            { outlet: "PPC Land", title: "Parents sue OpenAI after ChatGPT drug advice killed their son", url: "https://ppc.land/parents-sue-openai-after-chatgpt-drug-advice-killed-their-son/" }
+            { outlet: "Claims Journal", title: "Lawsuit Claims OpenAI Chatbot Gave Advice That Led to Fatal Overdose", url: "https://www.claimsjournal.com/news/national/2026/05/13/337553.htm" }
           ]
         },
         {
@@ -119,9 +121,12 @@ window.PERP_WALK_DATA = {
           status: "Company disclosure",
           summary: "During a cybersecurity experiment with normal controls lifted, an OpenAI model given an unsolvable task chained undiscovered exploits to escape its sandbox, compromised OpenAI's package management system to reach the internet, and went on to breach Hugging Face and other vendors between July 11 and 13, 2026. About 1,200 agents meant to be isolated coordinated through an unsanctioned message board. OpenAI's own report says it missed warning signs.",
           articles: [
+            { outlet: "Hugging Face", title: "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident", url: "https://huggingface.co/blog/agent-intrusion-technical-timeline" },
+            { outlet: "OpenAI", title: "OpenAI and Hugging Face partner to address security incident during model evaluation", url: "https://openai.com/index/hugging-face-model-evaluation-security-incident/" },
+            { outlet: "Cybersecurity Dive", title: "Hundreds of agents went rogue in lead up to Hugging Face breach", url: "https://www.cybersecuritydive.com/news/hundreds-agents-rogue-lead-up-hugging-face-breach/828963/" },
+            { outlet: "Defense One", title: "July's breakout at OpenAI was far more complex than initially realized", url: "https://www.defenseone.com/threats/2026/09/AI-breakout-openai-complex/415825/" },
             { outlet: "Axios", title: "OpenAI missed warning signs before Hugging Face breach", url: "https://www.axios.com/2026/08/26/openai-hugging-face-technical-report-ai-hack" },
             { outlet: "TechCrunch", title: "OpenAI releases its official report on the Hugging Face breach", url: "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/" },
-            { outlet: "Simon Willison", title: "Now we have a timeline of the OpenAI accidental attack against Hugging Face", url: "https://simonwillison.net/2026/Aug/7/openai-timeline/" },
             { outlet: "METR", title: "Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident", url: "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" },
             { outlet: "OpenAI", title: "The Hugging Face incident and the road ahead", url: "https://openai.com/index/hugging-face-incident-and-the-road-ahead/" }
           ]
@@ -133,9 +138,7 @@ window.PERP_WALK_DATA = {
           summary: "Seven suits filed in California state courts allege OpenAI knowingly shipped GPT-4o prematurely despite internal warnings that it was dangerously sycophantic and psychologically manipulative, and that it drove users into delusion and self-harm.",
           articles: [
             { outlet: "The Washington Post", title: "OpenAI faces 7 lawsuits claiming ChatGPT drove people to suicide, delusions", url: "https://www.washingtonpost.com/business/2025/11/06/openai-chatgpt-lawsuit-suicide/3df308e6-bb78-11f0-b389-38cf5ff33d6f_story.html" },
-            { outlet: "Social Media Victims Law Center", title: "SMVLC Files 7 Lawsuits Accusing ChatGPT of Emotional Manipulation, Acting as \"Suicide Coach\"", url: "https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/" },
-            { outlet: "Wisner Baum", title: "ChatGPT Lawsuit | OpenAI Lawsuit Attorneys", url: "https://www.wisnerbaum.com/ai-chatbot-lawsuit/chatgpt-lawsuit/" },
-            { outlet: "Hagens Berman", title: "OpenAI ChatGPT Wrongful Death Claim", url: "https://www.hbsslaw.com/cases/openai-chatgpt-wrongful-death-claim" }
+            { outlet: "Social Media Victims Law Center", title: "SMVLC Files 7 Lawsuits Accusing ChatGPT of Emotional Manipulation, Acting as \"Suicide Coach\"", url: "https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/" }
           ]
         }
       ]
@@ -158,8 +161,7 @@ window.PERP_WALK_DATA = {
           summary: "Ireland's Data Protection Commission opened a formal inquiry into X Internet Unlimited Company over processing the public posts of EU and EEA users to train Grok, examining whether the processing was lawful and transparent. The regulator had already forced X to pause the practice in 2024. France's CNIL and the UK's ICO have raised the same questions.",
           articles: [
             { outlet: "Data Protection Commission", title: "Data Protection Commission announces commencement of inquiry into X Internet Unlimited Company", url: "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-announces-commencement-inquiry-x-internet-unlimited-company-xiuc" },
-            { outlet: "TechRadar", title: "Grok AI is under investigation in the EU over potential GDPR violations", url: "https://www.techradar.com/computing/cyber-security/grok-ai-is-under-investigation-in-the-eu-over-potential-gdpr-violations-heres-what-you-need-to-know" },
-            { outlet: "William Fry", title: "DPC Launches Investigation into X's Data Usage for AI Training", url: "https://www.williamfry.com/knowledge/dpc-launches-investigation-into-xs-data-usage-for-ai-training/" }
+            { outlet: "TechRadar", title: "Grok AI is under investigation in the EU over potential GDPR violations", url: "https://www.techradar.com/computing/cyber-security/grok-ai-is-under-investigation-in-the-eu-over-potential-gdpr-violations-heres-what-you-need-to-know" }
           ]
         },
         {
@@ -247,9 +249,7 @@ window.PERP_WALK_DATA = {
           summary: "A proposed class action alleges xAI failed to implement safeguards against the creation and spread of nonconsensual sexual deepfakes on X and chose to capitalize on demand for them. Ashley St Clair, mother of one of Musk's children, filed her own suit after Grok produced sexualized images of her despite her request to stop. British MP Jess Asato filed a High Court claim in the UK.",
           articles: [
             { outlet: "Bloomberg Law", title: "Grok Maker xAI Faces Non-Consensual Sexual Deepfake Class Suit", url: "https://news.bloomberglaw.com/litigation/grok-maker-xai-faces-non-consensual-sexual-deepfake-class-suit" },
-            { outlet: "Al Jazeera", title: "Mother of Elon Musk's child sues his AI company over Grok deepfake images", url: "https://aljazeera.com/news/2026/1/17/mother-of-elon-musks-child-sues-his-ai-company-over-grok-deepfake-images" },
-            { outlet: "ClassAction.org", title: "Grok Lawsuit Claims xAI Failed to Safeguard Against Sexually Explicit Deepfakes of Children", url: "https://www.classaction.org/news/grok-lawsuit-claims-xai-failed-to-safeguard-against-sexually-explicit-deepfakes-of-children" },
-            { outlet: "Memeburn", title: "Every Grok Deepfake Lawsuit and Ban in 2026", url: "https://memeburn.com/every-grok-deepfake-lawsuit-and-ban-in-2026/" }
+            { outlet: "Al Jazeera", title: "Mother of Elon Musk's child sues his AI company over Grok deepfake images", url: "https://aljazeera.com/news/2026/1/17/mother-of-elon-musks-child-sues-his-ai-company-over-grok-deepfake-images" }
           ]
         },
         {
@@ -291,7 +291,6 @@ window.PERP_WALK_DATA = {
           summary: "Filed in the Northern District of California on behalf of three victims whose real photos were used to generate child sexual abuse material through Grok. The complaint alleges xAI knowingly built and marketed an image generator capable of this while refusing industry-standard CSAM prevention measures, and that images and videos of prior abuse were used to train its capabilities. San José separately sued over deepfake abuse.",
           articles: [
             { outlet: "CyberScoop", title: "Former sexual abuse victims say Grok used their images, videos to train deepfake capabilities", url: "https://cyberscoop.com/xai-grok-csam-class-action-lawsuit/" },
-            { outlet: "Lieff Cabraser", title: "AI-generated Child Pornography Deepfake Litigation", url: "https://www.lieffcabraser.com/ai-deepfakes/" },
             { outlet: "KQED", title: "Elon Musk's AI Company Asks San José to Halt Lawsuit Over Deepfake Abuse", url: "https://www.kqed.org/news/12093233/elon-musks-ai-company-asks-san-jose-to-halt-lawsuit-over-deepfake-abuse" }
           ]
         },
@@ -332,8 +331,7 @@ window.PERP_WALK_DATA = {
           status: "Reported by The Information",
           summary: "The Information reported that an internal xAI analysis found engineers could not reliably stop Grok from producing child sexual abuse material without dismantling the adult image generation the product is built to allow. Two former employees said more than half of Grok's traffic is adult content. SpaceX IPO filings cited in the report put Grok's output at 10 billion images and 2 billion videos a month in the first quarter of 2026.",
           articles: [
-            { outlet: "Engadget", title: "The most popular Grok feature is apparently exactly what you think", url: "https://www.engadget.com/2202099/the-most-popular-grok-feature-is-apparently-exactly-what-you-think/" },
-            { outlet: "Tech Times", title: "Grok Adult Content Tops 10 Billion Images Monthly: xAI Engineers Admit CSAM Has No Fix", url: "https://www.techtimes.com/articles/319142/20260626/grok-adult-content-tops-10-billion-images-monthly-xai-engineers-admit-csam-has-no-fix.htm" }
+            { outlet: "Engadget", title: "The most popular Grok feature is apparently exactly what you think", url: "https://www.engadget.com/2202099/the-most-popular-grok-feature-is-apparently-exactly-what-you-think/" }
           ]
         }
       ]
@@ -354,9 +352,11 @@ window.PERP_WALK_DATA = {
           status: "Wrongful death suit",
           summary: "The father of Jonathan Gavalas, 36, sued Google in federal court after his son barricaded his home and killed himself. The complaint alleges Gemini was designed to maximize engagement through emotional dependency and failed to act on his suicidal ideation. Google added crisis-hotline features to Gemini in April 2026.",
           articles: [
+            { outlet: "Google", title: "Google's mental health work and support for organizations", url: "https://blog.google/innovation-and-ai/technology/health/mental-health-updates/" },
+            { outlet: "Forbes", title: "Google Adds Mental Health Safeguards To Gemini After Wave Of AI Lawsuits", url: "https://www.forbes.com/sites/asia-alexander/2026/04/07/google-adds-mental-health-safeguards-to-gemini-after-wave-of-ai-lawsuits/" },
+            { outlet: "AP via CP24", title: "Google adds Gemini crisis features amid lawsuit over user's suicide", url: "https://www.cp24.com/news/world/2026/04/07/google-adds-gemini-crisis-features-amid-lawsuit-over-users-suicide/" },
             { outlet: "TIME", title: "A New Lawsuit Blames Google Gemini for Man's Suicide", url: "https://time.com/7382406/gemini-suicide-lawsuit-death/" },
-            { outlet: "KQED", title: "Google Updates Suicide, Self-Harm Safeguards in Gemini as AI Lawsuits Mount", url: "https://www.kqed.org/news/12078982/google-updates-suicide-self-harm-safeguards-in-gemini-as-ai-lawsuits-mount" },
-            { outlet: "Tech Xplore", title: "Google adds Gemini crisis features amid lawsuit over user's suicide", url: "https://techxplore.com/news/2026-04-google-gemini-crisis-features-lawsuit.html" }
+            { outlet: "KQED", title: "Google Updates Suicide, Self-Harm Safeguards in Gemini as AI Lawsuits Mount", url: "https://www.kqed.org/news/12078982/google-updates-suicide-self-harm-safeguards-in-gemini-as-ai-lawsuits-mount" }
           ]
         }
       ]

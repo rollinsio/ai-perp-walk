@@ -1,15 +1,17 @@
 # Trusted sources
 
-Every docket entry needs at least one link from tiers 1 through 4 below. Links from the "supplementary only" list can be added on top but never carry an entry by themselves. If the only coverage of something is on the supplementary list, it waits.
+Every docket entry needs at least one link from the four tiers below. Anything on the "not accepted" list does not go in the docket at all, even as an extra link. If the only coverage of something is on that list, the entry waits.
 
 ## Tier 1: primary documents
 
-The thing itself. Always preferred when available.
+The thing itself. Always preferred, and always added alongside press coverage when one exists.
 
-- Court filings and rulings: PACER, CourtListener, state court portals
-- Regulator and prosecutor announcements: Ofcom, European Commission, Irish Data Protection Commission, Office of the Privacy Commissioner of Canada, CNIL, ICO, US Department of Justice, state attorneys general, Paris prosecutor's office
-- Legislative letters and hearing records: House and Senate committee sites
-- Company disclosures: the company's own threat reports, incident reports, and post-mortems. These count as the company's account, and the entry's status should say so.
+- **Statements from the companies responsible or affected.** Press releases, blog posts, incident reports, after-action reports, technical timelines, and threat reports from the company that built the model or the company that was harmed. These are that party's own account and the entry's status should say so, but the document itself is the best record of what the company admits.
+- **Court filings and rulings.** PACER, CourtListener, state court portals, and the filed complaint or order itself when counsel hosts the PDF.
+- **Filing announcements from counsel or parties.** A press release announcing a suit was filed, from the plaintiffs' firm or the plaintiffs themselves. The firm's intake or marketing page is not this.
+- **Regulator and prosecutor announcements.** Ofcom, the European Commission, the Irish Data Protection Commission, the Office of the Privacy Commissioner of Canada, CNIL, the ICO, the US Department of Justice, state attorneys general, the Paris prosecutor's office, and their counterparts.
+- **Legislative letters and hearing records.** House and Senate committee sites and their equivalents abroad.
+- **Research reports from named organizations,** linked directly: the Center for Countering Digital Hate, METR, MITRE ATT&CK, university labs.
 
 ## Tier 2: wire services and papers of record
 
@@ -19,30 +21,31 @@ The thing itself. Always preferred when available.
 
 ## Tier 3: national broadcast and general news
 
-- CNN, NBC News, CBS News, ABC News, NPR, PBS NewsHour, CNBC
-- Axios, TIME, Fortune, The Atlantic, The New Yorker, Rolling Stone
+- CNN, NBC News, CBS News, ABC News, NPR, PBS NewsHour, CNBC, Fox News
+- Axios, TIME, Fortune, Forbes staff reporting, The Atlantic, The New Yorker, Rolling Stone
 - Al Jazeera, Euronews, France 24, Deutsche Welle, CBC, The Globe and Mail
-- Local outlets of record for the jurisdiction (KQED, CBS Baltimore, The Commercial Appeal, and the like)
+- The local outlet of record for the jurisdiction: KQED, CBS Baltimore, The Commercial Appeal, and the like
 
 ## Tier 4: technology, legal, and policy press
 
-- Technology: The Verge, TechCrunch, Wired, Ars Technica, The Register, 404 Media, The Information, MIT Technology Review, Platformer, CyberScoop, The Record, The Hacker News, Gizmodo, Engadget
+- Technology: The Verge, TechCrunch, Wired, Ars Technica, The Register, 404 Media, The Information, MIT Technology Review, Platformer, CyberScoop, The Record, Cybersecurity Dive, Defense One, The Hacker News, Gizmodo, Engadget, TNW
+- Legal: Bloomberg Law, Law360, Courthouse News Service, JURIST, Daily Journal, Claims Journal
+- Policy: TechPolicy.Press, Lawfare, EDRi
 - Entertainment trade, for deepfake and likeness cases: Deadline, Variety, The Hollywood Reporter
-- Legal: Bloomberg Law, Law360, Courthouse News Service, Reuters Legal, Daily Journal, Claims Journal
-- Policy: TechPolicy.Press, Lawfare, EDRi, Center for Countering Digital Hate research when cited by a tier 2 or 3 outlet
 - Aggregated wire copy on Yahoo, MSN, or a local station is acceptable when the byline is Reuters, AP, or Bloomberg. Link the original when you can.
 
-## Supplementary only
+## Not accepted
 
-Add these for depth. They never stand alone.
+These do not appear in the docket. Not as the main source, not as an extra link.
 
-- Law-firm case pages and press releases (Hagens Berman, Wisner Baum, Lieff Cabraser, Social Media Victims Law Center)
-- Lead-generation lawsuit sites (ClassAction.org, Top Class Actions, ConsumerNotice, Lawsuit Informer, and similar)
-- Advocacy and campaign sites
-- Trade and SEO news sites (Tech Times, PPC Land, WinBuzzer, Memeburn, and similar)
-- Blogs, Substack, Medium, personal sites, unless the author is a direct participant in the event
-- Wikipedia and Grokipedia
-- Video platforms and social media posts, unless the post is the incident
+- Law-firm intake, case-overview, or marketing pages. Link the complaint or the filing announcement instead.
+- Lead-generation lawsuit sites: ClassAction.org, Top Class Actions, ConsumerNotice, Lawsuit Informer, Open Class Actions, and similar.
+- SEO and rewrite sites: Tech Times, PPC Land, WinBuzzer, Memeburn, The Rundown, and similar.
+- Law-firm client alerts and knowledge articles from firms not involved in the case.
+- Blogs, Substack, Medium, and personal sites, unless the author is a direct participant in the event and the post is their account of it.
+- Wikipedia, Grokipedia, and other wikis.
+- Social media posts and video, unless the post is itself the incident.
+- Anonymous or unbylined aggregators.
 
 ## Why it matters
 
