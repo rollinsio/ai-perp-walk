@@ -45,6 +45,23 @@
     }).join('');
   }
 
+
+  function renderStatute(st) {
+    if (!st || !st.citation) return '';
+    return (
+      '<div class="statute">' +
+        '<p class="statute-label">The statute</p>' +
+        '<p class="statute-cite"><a href="' + esc(st.url) + '" rel="noopener" target="_blank">' + esc(st.citation) + '</a>' +
+          (st.title ? ' <span class="statute-title">' + esc(st.title) + '</span>' : '') +
+          (st.jurisdiction ? ' <span class="statute-juris">' + esc(st.jurisdiction) + '</span>' : '') + '</p>' +
+        '<blockquote class="statute-quote">' + esc(st.quote) + '</blockquote>' +
+        (st.translation ? '<p class="statute-translation">' + esc(st.translation) + '</p>' : '') +
+        (st.penalty ? '<p class="statute-penalty"><b>Penalty.</b> ' + esc(st.penalty) + '</p>' : '') +
+        (st.note ? '<p class="statute-note">' + esc(st.note) + '</p>' : '') +
+      '</div>'
+    );
+  }
+
   function renderCases(headRoot, root) {
     var id = new URLSearchParams(location.search).get('model');
     var m = DATA.models.filter(function (x) { return x.id === id; })[0];
@@ -80,6 +97,7 @@
             '<h2>' + esc(c.headline) + '</h2>' +
             (c.status ? '<span class="status">' + esc(c.status) + '</span>' : '') +
             (c.summary ? '<p class="summary">' + esc(c.summary) + '</p>' : '') +
+            renderStatute(c.statute) +
             '<ul class="coverage">' + links + '</ul>' +
           '</div>' +
         '</article>'
