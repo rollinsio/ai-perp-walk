@@ -74,6 +74,13 @@ js/app.js           renders both pages from the docket
 css/style.css       black, white, and the numbers in aggressive color
 assets/heads/       grayscale portraits, lightly visible behind each row
 assets/logos/       company logos, rendered grayscale
+assets/icon/        favicon. favicon.svg is the source; the PNGs and
+                    /favicon.ico are rasters of it
 ```
+
+The icon is a tally of four marks struck through in red: the running count, and
+the scratch on the cell wall. Its geometry sits on a 4-unit grid inside a
+64-unit square, so at 16px every bar edge lands on a whole pixel. Keep that grid
+if you edit `favicon.svg`, and re-cut the rasters to match.
 
 Image sources and licenses: [ATTRIBUTION.md](ATTRIBUTION.md).
