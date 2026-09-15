@@ -1,9 +1,9 @@
 /*
   The docket. This file drives the whole site.
 
-  Scope: the model itself. An entry must be about what the model generated, did, or was used to do.
-  Corporate conduct that does not run through the model (data centers, training-data acquisition,
-  labor, securities) is out of scope. Sources must meet SOURCES.md.
+  Scope: the model itself. In scope: how it was trained, what it generated, what it did, and human
+  actions taken at its behest or with its help. Out of scope: corporate conduct that does not run
+  through the model (data centers, labor, securities). Sources must meet SOURCES.md.
 
   Each model has an `incidents` array. The tally on the board is the length of that array.
   Every incident needs: date (YYYY-MM-DD, the incident or filing date), headline, status,
@@ -32,6 +32,15 @@ window.PERP_WALK_DATA = {
             { outlet: "The Register", title: "Chinese spies told Claude to break into about 30 critical orgs. Some attacks succeeded", url: "https://www.theregister.com/2025/11/13/chinese_spies_claude_attacks/" },
             { outlet: "Anthropic", title: "Disrupting an AI-orchestrated cyber espionage campaign", url: "https://www.anthropic.com/news/disrupting-AI-espionage" },
             { outlet: "Campus Technology", title: "Cyber Espionage Campaign Exploits Claude Code Tool to Infiltrate Global Targets", url: "https://campustechnology.com/articles/2025/11/24/cyber-espionage-campaign-exploits-claude-code-tool-to-infiltrate-global-targets.aspx" }
+          ]
+        },
+        {
+          date: "2026-07-20",
+          headline: "Anthropic pays $1.5 billion to settle claims it trained Claude on pirated books",
+          status: "Settled for $1.5 billion",
+          summary: "A federal judge gave final approval to a $1.5 billion class settlement resolving claims that Anthropic downloaded hundreds of thousands of copyrighted books from pirate libraries to train Claude. It is the largest copyright recovery on record. Anthropic did not admit liability.",
+          articles: [
+            { outlet: "Lieff Cabraser", title: "Copyright Claimholders' Class Action Against Anthropic", url: "https://www.lieffcabraser.com/anthropic-authors-rights/" }
           ]
         },
         {
@@ -142,6 +151,17 @@ window.PERP_WALK_DATA = {
       head: "assets/heads/elon-musk.jpg",
       color: "#ffe600",
       incidents: [
+        {
+          date: "2025-04-11",
+          headline: "Irish regulator opens GDPR inquiry into training Grok on EU users' posts",
+          status: "Regulatory inquiry",
+          summary: "Ireland's Data Protection Commission opened a formal inquiry into X Internet Unlimited Company over processing the public posts of EU and EEA users to train Grok, examining whether the processing was lawful and transparent. The regulator had already forced X to pause the practice in 2024. France's CNIL and the UK's ICO have raised the same questions.",
+          articles: [
+            { outlet: "Data Protection Commission", title: "Data Protection Commission announces commencement of inquiry into X Internet Unlimited Company", url: "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-announces-commencement-inquiry-x-internet-unlimited-company-xiuc" },
+            { outlet: "TechRadar", title: "Grok AI is under investigation in the EU over potential GDPR violations", url: "https://www.techradar.com/computing/cyber-security/grok-ai-is-under-investigation-in-the-eu-over-potential-gdpr-violations-heres-what-you-need-to-know" },
+            { outlet: "William Fry", title: "DPC Launches Investigation into X's Data Usage for AI Training", url: "https://www.williamfry.com/knowledge/dpc-launches-investigation-into-xs-data-usage-for-ai-training/" }
+          ]
+        },
         {
           date: "2025-05-23",
           headline: "DOGE puts Grok to work on sensitive federal data",
@@ -304,6 +324,16 @@ window.PERP_WALK_DATA = {
           summary: "After a Commissioner-initiated investigation opened January 15, 2026, the Office of the Privacy Commissioner found that X Corp and X.AI contravened PIPEDA by generating sexualized deepfakes without the consent of the people depicted, and that the harms outweighed any business benefit. It recommended suspending Grok Imagine until xAI can demonstrate it is safe, plus annual third-party audits and proactive monitoring.",
           articles: [
             { outlet: "Office of the Privacy Commissioner of Canada", title: "PIPEDA Findings #2026-004: Commissioner-initiated complaints concerning X Corp.'s and X.AI LLC's compliance with PIPEDA", url: "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/" }
+          ]
+        },
+        {
+          date: "2026-06-25",
+          headline: "Grok makes 10 billion images a month, and xAI engineers found no reliable fix for CSAM",
+          status: "Reported by The Information",
+          summary: "The Information reported that an internal xAI analysis found engineers could not reliably stop Grok from producing child sexual abuse material without dismantling the adult image generation the product is built to allow. Two former employees said more than half of Grok's traffic is adult content. SpaceX IPO filings cited in the report put Grok's output at 10 billion images and 2 billion videos a month in the first quarter of 2026.",
+          articles: [
+            { outlet: "Engadget", title: "The most popular Grok feature is apparently exactly what you think", url: "https://www.engadget.com/2202099/the-most-popular-grok-feature-is-apparently-exactly-what-you-think/" },
+            { outlet: "Tech Times", title: "Grok Adult Content Tops 10 Billion Images Monthly: xAI Engineers Admit CSAM Has No Fix", url: "https://www.techtimes.com/articles/319142/20260626/grok-adult-content-tops-10-billion-images-monthly-xai-engineers-admit-csam-has-no-fix.htm" }
           ]
         }
       ]

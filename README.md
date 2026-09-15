@@ -47,7 +47,7 @@ Everything lives in [`data/incidents.js`](data/incidents.js). Add an object to t
 
 The tally is the length of the array, so the number on the board updates by itself. Rules:
 
-- **Only the model.** An entry is about what the model generated, did, or was used to do. Corporate conduct that doesn't run through the model (data centers, training-data acquisition, labor, securities) is out of scope.
+- **Only the model.** In scope: how it was trained, what it generated, what it did, and human actions taken at its behest or with its help. Out of scope: corporate conduct that doesn't run through the model, such as data centers, labor, or securities.
 - **At least one trusted source.** See [SOURCES.md](SOURCES.md). Law-firm pages, lead-generation sites, and blogs can be added as extra links but never as the only one.
 - **One entry per proceeding or event.** A lawsuit, an investigation, a court order, a ban, and a company disclosure are each one entry, even when they stem from the same underlying behavior.
 - **Say what it is.** `status` names the kind of action: criminal investigation, wrongful death suit, class action, regulatory finding, company disclosure. Nothing here is a conviction unless the coverage says so.
