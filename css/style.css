@@ -68,7 +68,14 @@ a { color: inherit; }
 
 .dek {
   max-width: 62ch;
-  margin: 12px 0 0;
+  margin: 14px 0 0;
+  font-size: clamp(15px, 1.5vw, 18px);
+  color: var(--ink);
+}
+
+.dek--fine {
+  margin-top: 10px;
+  font-size: 13px;
   color: var(--mute);
 }
 
