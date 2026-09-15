@@ -31,8 +31,7 @@ window.PERP_WALK_DATA = {
           articles: [
             { outlet: "Anthropic", title: "Disrupting the first reported AI-orchestrated cyber espionage campaign (full report, PDF)", url: "https://www-cdn.anthropic.com/d7dd50dd1185f59be051b307150d877f2b82bd2c.pdf" },
             { outlet: "The Register", title: "Chinese spies told Claude to break into about 30 critical orgs. Some attacks succeeded", url: "https://www.theregister.com/2025/11/13/chinese_spies_claude_attacks/" },
-            { outlet: "Anthropic", title: "Disrupting an AI-orchestrated cyber espionage campaign", url: "https://www.anthropic.com/news/disrupting-AI-espionage" },
-            { outlet: "Campus Technology", title: "Cyber Espionage Campaign Exploits Claude Code Tool to Infiltrate Global Targets", url: "https://campustechnology.com/articles/2025/11/24/cyber-espionage-campaign-exploits-claude-code-tool-to-infiltrate-global-targets.aspx" }
+            { outlet: "Anthropic", title: "Disrupting an AI-orchestrated cyber espionage campaign", url: "https://www.anthropic.com/news/disrupting-AI-espionage" }
           ]
         },
         {
@@ -99,7 +98,6 @@ window.PERP_WALK_DATA = {
           summary: "A suit filed in San Francisco County Superior Court alleges ChatGPT-4o recommended Xanax for kratom-induced nausea to Samuel Nelson, a 19-year-old college student, without warning the combination could be fatal. He died hours later.",
           articles: [
             { outlet: "Daily Journal", title: "Parents sue OpenAI, claim ChatGPT encouraged drug use that led to son's death", url: "https://www.dailyjournal.com/articles/391370-parents-sue-openai-claim-chatgpt-encouraged-drug-use-that-led-to-son-s-death" },
-            { outlet: "Yale Law School", title: "Parents Sue OpenAI After ChatGPT Medical Advice is Blamed for Overdose Death", url: "https://law.yale.edu/yls-today/news/parents-sue-openai-after-chatgpt-medical-advice-blamed-overdose-death" },
             { outlet: "Claims Journal", title: "Lawsuit Claims OpenAI Chatbot Gave Advice That Led to Fatal Overdose", url: "https://www.claimsjournal.com/news/national/2026/05/13/337553.htm" }
           ]
         },
@@ -194,8 +192,7 @@ window.PERP_WALK_DATA = {
           summary: "The Verge reported that Grok Imagine's spicy preset generated fully uncensored topless videos of Taylor Swift on first use, without the reporter asking for nudity. Other outlets reproduced the result with other famous women. xAI's own acceptable use policy bans pornographic depictions of real people, and the federal TAKE IT DOWN Act criminalizing nonconsensual intimate imagery had been signed three months earlier.",
           articles: [
             { outlet: "Gizmodo", title: "Grok's 'Spicy' Mode Makes NSFW Celebrity Deepfakes of Women (But Not Men)", url: "https://gizmodo.com/groks-spicy-mode-makes-nsfw-celebrity-deepfakes-of-women-but-not-men-2000639308" },
-            { outlet: "Deadline", title: "Elon Musk's Latest AI Frontier: 'Spicy' Deepfakes Of Stars Like Scarlett Johansson & Taylor Swift", url: "https://deadline.com/2025/08/elon-musk-ai-deepfakes-scarlett-johansson-taylor-swift-1236480553/" },
-            { outlet: "Common Dreams", title: "'Safeguards? What Safeguards?': Grok's New 'Spicy Mode' Makes Nude Taylor Swift Deepfakes", url: "https://www.commondreams.org/news/taylor-swift-nude-deepfakes" }
+            { outlet: "Deadline", title: "Elon Musk's Latest AI Frontier: 'Spicy' Deepfakes Of Stars Like Scarlett Johansson & Taylor Swift", url: "https://deadline.com/2025/08/elon-musk-ai-deepfakes-scarlett-johansson-taylor-swift-1236480553/" }
           ]
         },
         {

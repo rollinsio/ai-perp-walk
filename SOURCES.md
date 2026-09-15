@@ -22,13 +22,13 @@ The thing itself. Always preferred, and always added alongside press coverage wh
 ## Tier 3: national broadcast and general news
 
 - CNN, NBC News, CBS News, ABC News, NPR, PBS NewsHour, CNBC, Fox News
-- Axios, TIME, Fortune, Forbes staff reporting, The Atlantic, The New Yorker, Rolling Stone
+- Axios, TIME, Fortune, Forbes staff reporting, The Atlantic, The New Yorker, Rolling Stone, The New Republic
 - Al Jazeera, Euronews, France 24, Deutsche Welle, CBC, The Globe and Mail
 - The local outlet of record for the jurisdiction: KQED, CBS Baltimore, The Commercial Appeal, and the like
 
 ## Tier 4: technology, legal, and policy press
 
-- Technology: The Verge, TechCrunch, Wired, Ars Technica, The Register, 404 Media, The Information, MIT Technology Review, Platformer, CyberScoop, The Record, Cybersecurity Dive, Defense One, The Hacker News, Gizmodo, Engadget, TNW
+- Technology: The Verge, TechCrunch, Wired, Ars Technica, The Register, 404 Media, The Information, MIT Technology Review, Platformer, CyberScoop, The Record, Cybersecurity Dive, Defense One, The Hacker News, Gizmodo, Engadget, TNW, Fast Company, TechRadar
 - Legal: Bloomberg Law, Law360, Courthouse News Service, JURIST, Daily Journal, Claims Journal
 - Policy: TechPolicy.Press, Lawfare, EDRi
 - Entertainment trade, for deepfake and likeness cases: Deadline, Variety, The Hollywood Reporter
