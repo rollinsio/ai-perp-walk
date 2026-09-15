@@ -405,8 +405,8 @@ window.PERP_WALK_DATA = {
           statute: {
             jurisdiction: "United States (federal)",
             citation: "18 U.S.C. § 2256(8)(C), 18 U.S.C. § 2252A(a)(2)",
-            title: "Child pornography: morphed images of identifiable minors",
-            quote: "\"child pornography\" means any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (C) such visual depiction has been created, adapted, or modified to appear that an identifiable minor is engaging in sexually explicit conduct.",
+            title: "Definition of child pornography: morphed images of identifiable minors",
+            quote: "any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (C) such visual depiction has been created, adapted, or modified to appear that an identifiable minor is engaging in sexually explicit conduct.",
             penalty: "Under § 2252A(a)(2) and (b)(1), knowingly receiving or distributing child pornography by computer is punishable by not less than 5 and not more than 20 years' imprisonment.",
             url: "https://www.law.cornell.edu/uscode/text/18/2256"
           },
@@ -422,8 +422,8 @@ window.PERP_WALK_DATA = {
           statute: {
             jurisdiction: "United States (federal)",
             citation: "18 U.S.C. § 2256(8)(C), 18 U.S.C. § 2252A(a)(2)",
-            title: "Child pornography: morphed images of identifiable minors",
-            quote: "\"child pornography\" means any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (C) such visual depiction has been created, adapted, or modified to appear that an identifiable minor is engaging in sexually explicit conduct.",
+            title: "Definition of child pornography: morphed images of identifiable minors",
+            quote: "any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (C) such visual depiction has been created, adapted, or modified to appear that an identifiable minor is engaging in sexually explicit conduct.",
             penalty: "Under § 2252A(a)(2) and (b)(1), knowingly receiving or distributing child pornography by computer is punishable by not less than 5 and not more than 20 years' imprisonment.",
             url: "https://www.law.cornell.edu/uscode/text/18/2256"
           },
@@ -499,8 +499,8 @@ window.PERP_WALK_DATA = {
           statute: {
             jurisdiction: "United States (federal)",
             citation: "18 U.S.C. § 2256(8)(B), 18 U.S.C. § 2252A(a)(2)",
-            title: "Child pornography: computer-generated images indistinguishable from a minor",
-            quote: "\"child pornography\" means any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (B) such visual depiction is a digital image, computer image, or computer-generated image that is, or is indistinguishable from, that of a minor engaging in sexually explicit conduct",
+            title: "Definition of child pornography: computer-generated images indistinguishable from a minor",
+            quote: "any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (B) such visual depiction is a digital image, computer image, or computer-generated image that is, or is indistinguishable from, that of a minor engaging in sexually explicit conduct",
             penalty: "Under § 2252A(a)(2) and (b)(1), knowingly receiving or distributing child pornography by computer is punishable by not less than 5 and not more than 20 years' imprisonment.",
             url: "https://www.law.cornell.edu/uscode/text/18/2256"
           },
