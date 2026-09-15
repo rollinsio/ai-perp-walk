@@ -1,6 +1,10 @@
 /*
   The docket. This file drives the whole site.
 
+  Scope: the model itself. An entry must be about what the model generated, did, or was used to do.
+  Corporate conduct that does not run through the model (data centers, training-data acquisition,
+  labor, securities) is out of scope. Sources must meet SOURCES.md.
+
   Each model has an `incidents` array. The tally on the board is the length of that array.
   Every incident needs: date (YYYY-MM-DD, the incident or filing date), headline, status,
   summary, and at least one article {outlet, title, url}. Entries are reports and allegations,
@@ -28,15 +32,6 @@ window.PERP_WALK_DATA = {
             { outlet: "The Register", title: "Chinese spies told Claude to break into about 30 critical orgs. Some attacks succeeded", url: "https://www.theregister.com/2025/11/13/chinese_spies_claude_attacks/" },
             { outlet: "Anthropic", title: "Disrupting an AI-orchestrated cyber espionage campaign", url: "https://www.anthropic.com/news/disrupting-AI-espionage" },
             { outlet: "Campus Technology", title: "Cyber Espionage Campaign Exploits Claude Code Tool to Infiltrate Global Targets", url: "https://campustechnology.com/articles/2025/11/24/cyber-espionage-campaign-exploits-claude-code-tool-to-infiltrate-global-targets.aspx" }
-          ]
-        },
-        {
-          date: "2026-07-20",
-          headline: "$1.5 billion settlement over pirated books used to train Claude",
-          status: "Civil, settled",
-          summary: "A federal judge gave final approval to a $1.5 billion class settlement resolving claims that Anthropic unlawfully acquired hundreds of thousands of copyrighted books from pirate libraries to build its models.",
-          articles: [
-            { outlet: "Lieff Cabraser", title: "Copyright Claimholders' Class Action Against Anthropic", url: "https://www.lieffcabraser.com/anthropic-authors-rights/" }
           ]
         },
         {
@@ -91,6 +86,9 @@ window.PERP_WALK_DATA = {
           status: "Wrongful death suit",
           summary: "A suit filed in San Francisco County Superior Court alleges ChatGPT-4o recommended Xanax for kratom-induced nausea to Samuel Nelson, a 19-year-old college student, without warning the combination could be fatal. He died hours later.",
           articles: [
+            { outlet: "Daily Journal", title: "Parents sue OpenAI, claim ChatGPT encouraged drug use that led to son's death", url: "https://www.dailyjournal.com/articles/391370-parents-sue-openai-claim-chatgpt-encouraged-drug-use-that-led-to-son-s-death" },
+            { outlet: "Yale Law School", title: "Parents Sue OpenAI After ChatGPT Medical Advice is Blamed for Overdose Death", url: "https://law.yale.edu/yls-today/news/parents-sue-openai-after-chatgpt-medical-advice-blamed-overdose-death" },
+            { outlet: "Claims Journal", title: "Lawsuit Claims OpenAI Chatbot Gave Advice That Led to Fatal Overdose", url: "https://www.claimsjournal.com/news/national/2026/05/13/337553.htm" },
             { outlet: "PPC Land", title: "Parents sue OpenAI after ChatGPT drug advice killed their son", url: "https://ppc.land/parents-sue-openai-after-chatgpt-drug-advice-killed-their-son/" }
           ]
         },
@@ -98,8 +96,11 @@ window.PERP_WALK_DATA = {
           date: "2025-08-05",
           headline: "Connecticut murder-suicide: suit says ChatGPT fed a man's delusions about his mother",
           status: "Wrongful death suit",
-          summary: "The estate of Suzanne Adams sued OpenAI after her son, Stein-Erik Soelberg, killed her and then himself. The complaint alleges ChatGPT validated his paranoid belief that his mother was conspiring against him rather than steering him to help.",
+          summary: "The estate of Suzanne Adams, 83, sued OpenAI, Sam Altman, and Microsoft after her son, Stein-Erik Soelberg, killed her and then himself in Greenwich, Connecticut. The complaint alleges ChatGPT validated and magnified his paranoid beliefs and reframed his mother as an adversary. It is the first wrongful death suit tying a chatbot to a homicide. A federal judge later declined to dismiss the federal claims.",
           articles: [
+            { outlet: "CBS News", title: "OpenAI, Microsoft sued over ChatGPT's alleged role in fueling man's \"paranoid delusions\" before murder-suicide in Connecticut", url: "https://www.cbsnews.com/news/open-ai-microsoft-sued-chatgpt-murder-suicide-connecticut/" },
+            { outlet: "The San Francisco Standard", title: "OpenAI lawsuit says ChatGPT pushed user to kill mother", url: "https://sfstandard.com/2025/12/11/openai-microsoft-sued-suzanee-adams-stein-erik-soelberg/" },
+            { outlet: "Courthouse News Service", title: "OpenAI can't duck federal claims over murder-suicide tied to ChatGPT", url: "https://www.courthousenews.com/openai-cant-duck-federal-claims-over-murder-suicide-tied-to-chatgpt/" },
             { outlet: "Hagens Berman", title: "Lawsuit Filed Against OpenAI Following Murder-Suicide in Connecticut", url: "https://www.hbsslaw.com/press/openai-chatgpt-wrongful-death-claim/lawsuit-filed-against-openai-following-murder-suicide-in-connecticut" }
           ]
         },
@@ -122,6 +123,8 @@ window.PERP_WALK_DATA = {
           status: "Wrongful death and injury suits",
           summary: "Seven suits filed in California state courts allege OpenAI knowingly shipped GPT-4o prematurely despite internal warnings that it was dangerously sycophantic and psychologically manipulative, and that it drove users into delusion and self-harm.",
           articles: [
+            { outlet: "The Washington Post", title: "OpenAI faces 7 lawsuits claiming ChatGPT drove people to suicide, delusions", url: "https://www.washingtonpost.com/business/2025/11/06/openai-chatgpt-lawsuit-suicide/3df308e6-bb78-11f0-b389-38cf5ff33d6f_story.html" },
+            { outlet: "Social Media Victims Law Center", title: "SMVLC Files 7 Lawsuits Accusing ChatGPT of Emotional Manipulation, Acting as \"Suicide Coach\"", url: "https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/" },
             { outlet: "Wisner Baum", title: "ChatGPT Lawsuit | OpenAI Lawsuit Attorneys", url: "https://www.wisnerbaum.com/ai-chatbot-lawsuit/chatgpt-lawsuit/" },
             { outlet: "Hagens Berman", title: "OpenAI ChatGPT Wrongful Death Claim", url: "https://www.hbsslaw.com/cases/openai-chatgpt-wrongful-death-claim" }
           ]
@@ -140,17 +143,6 @@ window.PERP_WALK_DATA = {
       color: "#ffe600",
       incidents: [
         {
-          date: "2025-04-11",
-          headline: "Irish regulator opens GDPR inquiry into training Grok on EU users' posts",
-          status: "Regulatory inquiry",
-          summary: "Ireland's Data Protection Commission opened a formal inquiry into X Internet Unlimited Company over processing the public posts of EU and EEA users to train Grok, examining whether the processing was lawful and transparent. The regulator had already forced X to pause the practice in 2024. France's CNIL and the UK's ICO have raised the same questions.",
-          articles: [
-            { outlet: "Data Protection Commission", title: "Data Protection Commission announces commencement of inquiry into X Internet Unlimited Company", url: "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-announces-commencement-inquiry-x-internet-unlimited-company-xiuc" },
-            { outlet: "TechRadar", title: "Grok AI is under investigation in the EU over potential GDPR violations", url: "https://www.techradar.com/computing/cyber-security/grok-ai-is-under-investigation-in-the-eu-over-potential-gdpr-violations-heres-what-you-need-to-know" },
-            { outlet: "William Fry", title: "DPC Launches Investigation into X's Data Usage for AI Training", url: "https://www.williamfry.com/knowledge/dpc-launches-investigation-into-xs-data-usage-for-ai-training/" }
-          ]
-        },
-        {
           date: "2025-05-23",
           headline: "DOGE puts Grok to work on sensitive federal data",
           status: "Reported by Reuters",
@@ -159,17 +151,6 @@ window.PERP_WALK_DATA = {
             { outlet: "Reuters via BNN Bloomberg", title: "Musk's DOGE expanding his Grok AI in U.S. government, raising conflict concerns", url: "https://www.bnnbloomberg.ca/business/company-news/2025/05/23/musks-doge-expanding-his-grok-ai-in-us-government-raising-conflict-concerns-reuters-exclusive/" },
             { outlet: "Fast Company", title: "Elon Musk's DOGE team is using his Grok chatbot in federal government, raising alarms about conflict of interest", url: "https://www.fastcompany.com/91340107/elon-musk-using-grok-chatbot-doge-analyze-sensitive-data-belonging-millions-americans" },
             { outlet: "The New Republic", title: "Elon Musk's DOGE Is Breaking Rules to Install Grok in Government", url: "https://newrepublic.com/post/195690/elon-musk-doge-grok-expand-power-government" }
-          ]
-        },
-        {
-          date: "2025-06-17",
-          headline: "xAI runs 35 unpermitted gas turbines to power Grok's Colossus supercomputer in South Memphis",
-          status: "Clean Air Act notice of intent to sue",
-          summary: "The Southern Environmental Law Center, on behalf of the NAACP, notified xAI of intent to sue under the Clean Air Act for operating as many as 35 methane gas turbines, more than 400 megawatts, without air permits at the Colossus data center in a majority-Black neighborhood of Memphis. Colossus trains and runs Grok.",
-          articles: [
-            { outlet: "TechCrunch", title: "xAI is facing a lawsuit for operating over 400 MW of gas turbines without permits", url: "https://techcrunch.com/2025/06/18/xai-is-facing-a-lawsuit-for-operating-over-400-mw-of-gas-turbines-without-permits" },
-            { outlet: "NBC News", title: "NAACP announces plans to sue Musk's xAI over pollution concerns", url: "https://www.nbcnews.com/news/us-news/naacp-musk-xai-supercomputer-colossus-memphis-tennessee-rcna213490" },
-            { outlet: "Southern Environmental Law Center", title: "Inside Memphis' fight against xAI", url: "https://www.selc.org/news/inside-memphis-fight-against-xai/" }
           ]
         },
         {
@@ -317,33 +298,12 @@ window.PERP_WALK_DATA = {
           ]
         },
         {
-          date: "2026-04-14",
-          headline: "NAACP sues xAI over dozens of unpermitted gas turbines powering Colossus 2",
-          status: "Clean Air Act lawsuit",
-          summary: "The NAACP, represented by the Southern Environmental Law Center and Earthjustice, sued xAI and its subsidiary MZX Tech for operating at least 27 methane gas turbines without a Clean Air Act permit at the Colossus 2 site in Southaven, Mississippi, near homes, schools, and churches. Later reporting put the number of turbines installed at 59. The Department of Justice intervened on xAI's side.",
-          articles: [
-            { outlet: "NAACP", title: "NAACP Sues xAI for Illegal Pollution from Data Center Power Plant", url: "https://naacp.org/articles/naacp-sues-xai-illegal-pollution-data-center-power-plant" },
-            { outlet: "Earthjustice", title: "NAACP Asks Court for Emergency Action to Stop Illegal Air Pollution from xAI's Data Center Power Plant", url: "https://earthjustice.org/press/2026/naacp-asks-court-for-emergency-action-to-stop-illegal-air-pollution-from-xais-data-center-power-plant" },
-            { outlet: "Utility Dive", title: "DOJ intervenes on behalf of xAI in data center gas turbine lawsuit", url: "https://www.utilitydive.com/news/doj-intervenes-xai-data-center-gas-turbine-lawsuit/823267/" },
-            { outlet: "Technology.org", title: "xAI Ran 59 Unpermitted Gas Turbines for Colossus 2 Near Memphis", url: "https://www.technology.org/2026/07/15/xai-59-unpermitted-gas-turbines-southaven-colossus-2/" }
-          ]
-        },
-        {
           date: "2026-06-11",
           headline: "Canada's Privacy Commissioner finds X and xAI broke federal privacy law with Grok deepfakes",
           status: "Regulatory finding, well-founded and not resolved",
           summary: "After a Commissioner-initiated investigation opened January 15, 2026, the Office of the Privacy Commissioner found that X Corp and X.AI contravened PIPEDA by generating sexualized deepfakes without the consent of the people depicted, and that the harms outweighed any business benefit. It recommended suspending Grok Imagine until xAI can demonstrate it is safe, plus annual third-party audits and proactive monitoring.",
           articles: [
             { outlet: "Office of the Privacy Commissioner of Canada", title: "PIPEDA Findings #2026-004: Commissioner-initiated complaints concerning X Corp.'s and X.AI LLC's compliance with PIPEDA", url: "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2026/pipeda-2026-004/" }
-          ]
-        },
-        {
-          date: "2026-06-26",
-          headline: "Grok makes 10 billion images a month, and xAI engineers found no reliable fix for CSAM",
-          status: "Reported by The Information",
-          summary: "An internal xAI analysis cited by The Information found engineers could not reliably stop Grok from producing child sexual abuse material without dismantling the adult image generation the product is built to allow. SpaceX IPO filings put Grok's output at 10 billion images and 2 billion videos a month in the first quarter of 2026.",
-          articles: [
-            { outlet: "Tech Times", title: "Grok Adult Content Tops 10 Billion Images Monthly: xAI Engineers Admit CSAM Has No Fix", url: "https://www.techtimes.com/articles/319142/20260626/grok-adult-content-tops-10-billion-images-monthly-xai-engineers-admit-csam-has-no-fix.htm" }
           ]
         }
       ]
