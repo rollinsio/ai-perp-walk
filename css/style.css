@@ -1,0 +1,256 @@
+/* AI Safety Only Needs a Perp Walk. Black and white, with the numbers in blood. */
+
+:root {
+  --ink: #ffffff;
+  --paper: #000000;
+  --mute: #8a8a8a;
+  --rule: #2a2a2a;
+  --display: "Anton", Impact, "Arial Narrow Bold", sans-serif;
+  --mono: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--paper); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  padding: clamp(32px, 7vw, 96px) clamp(16px, 5vw, 64px) clamp(24px, 4vw, 48px);
+  border-bottom: 3px solid var(--ink);
+}
+
+.kicker {
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.kicker a { text-decoration: none; }
+.kicker a:hover { color: var(--ink); }
+
+.masthead h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(44px, 10vw, 140px);
+  line-height: 0.96;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  max-width: 12ch;
+}
+
+.sub {
+  margin: 28px 0 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(22px, 3.2vw, 44px);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--ink);
+  max-width: 24ch;
+}
+
+.dek {
+  max-width: 62ch;
+  margin: 12px 0 0;
+  color: var(--mute);
+}
+
+.masthead--small { padding-top: 28px; padding-bottom: 20px; }
+.masthead--small h1 { font-size: clamp(36px, 7vw, 88px); }
+.masthead--small .who { margin: 10px 0 0; color: var(--mute); }
+.masthead--small .who b { color: var(--ink); font-weight: 600; }
+
+/* ---------- The board ---------- */
+
+.board { display: block; }
+
+.row {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(120px, 220px) 1fr auto;
+  align-items: center;
+  gap: clamp(16px, 4vw, 48px);
+  min-height: clamp(160px, 24vw, 260px);
+  padding: clamp(20px, 3vw, 36px) clamp(16px, 5vw, 64px);
+  border-bottom: 1px solid var(--rule);
+  overflow: hidden;
+}
+.row:last-child { border-bottom: 3px solid var(--ink); }
+
+/* The head of the company, lightly visible behind the row. */
+.row .head {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: var(--head-pos, 62% 18%);
+  filter: grayscale(1) contrast(1.15);
+  opacity: 0.16;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 35%, #000 70%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0%, #000 35%, #000 70%, transparent 100%);
+  transition: opacity 240ms ease;
+}
+.row:hover .head { opacity: 0.26; }
+
+/* Logos are painted as a white silhouette through a mask (set inline in app.js), so any source color reads as grayscale. */
+.logo {
+  display: block;
+  width: 100%;
+  height: 64px;
+  background: var(--ink);
+  opacity: 0.9;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+          mask-position: left center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.logo--tall { height: 88px; max-width: 120px; }
+
+.meta .model {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(30px, 5vw, 64px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+.meta .company { margin: 8px 0 0; color: var(--mute); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
+.meta .person { margin: 4px 0 0; }
+.meta .person b { font-weight: 600; }
+.meta .person span { color: var(--mute); }
+
+/* The number. */
+.tally {
+  justify-self: end;
+  text-align: right;
+  text-decoration: none;
+  display: block;
+}
+.tally .count {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(88px, 15vw, 200px);
+  line-height: 0.85;
+  color: var(--hot);
+  text-shadow: 0 0 24px color-mix(in srgb, var(--hot) 55%, transparent);
+  transition: transform 160ms ease, text-shadow 160ms ease;
+}
+.tally .label {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--hot);
+}
+.tally:hover .count, .tally:focus-visible .count {
+  transform: scale(1.04);
+  text-shadow: 0 0 48px var(--hot);
+}
+.tally:focus-visible { outline: 2px solid var(--hot); outline-offset: 8px; }
+
+/* ---------- Case file ---------- */
+
+.cases { padding: clamp(24px, 4vw, 48px) clamp(16px, 5vw, 64px); max-width: 1100px; }
+
+.case {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.case .num {
+  font-family: var(--display);
+  font-size: 56px;
+  line-height: 0.9;
+  color: var(--hot);
+}
+.case .date { color: var(--mute); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 6px; }
+.case h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(22px, 3vw, 34px); line-height: 1.05; text-transform: uppercase; }
+.case .status {
+  display: inline-block;
+  margin: 10px 0 0;
+  padding: 3px 8px;
+  border: 1px solid var(--hot);
+  color: var(--hot);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.case .summary { margin: 14px 0 0; color: #d6d6d6; max-width: 70ch; }
+.case .coverage { margin: 16px 0 0; padding: 0; list-style: none; }
+.case .coverage li { margin: 6px 0; }
+.case .coverage a { text-decoration-color: var(--mute); text-underline-offset: 3px; }
+.case .coverage a:hover { text-decoration-color: var(--hot); }
+.case .coverage .outlet { color: var(--mute); }
+
+.empty { color: var(--mute); padding: 48px 0; }
+
+/* ---------- Footer ---------- */
+
+.colophon {
+  padding: 32px clamp(16px, 5vw, 64px) 32px;
+  color: var(--mute);
+  max-width: 80ch;
+}
+.colophon strong { color: var(--ink); }
+.colophon code { color: #cfcfcf; }
+.fine { font-size: 12px; }
+
+.disclaimer {
+  margin: 0 clamp(16px, 5vw, 64px);
+  padding: 24px 0 56px;
+  border-top: 1px solid var(--rule);
+  color: var(--mute);
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 90ch;
+}
+.disclaimer p { margin: 0 0 10px; }
+.disclaimer strong { color: var(--ink); }
+.disclaimer code { color: #cfcfcf; }
+.notice { padding: 24px; }
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 720px) {
+  .row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo logo" "meta tally";
+    min-height: 0;
+  }
+  .row .logo-wrap { grid-area: logo; }
+  .row .meta { grid-area: meta; }
+  .row .tally { grid-area: tally; }
+  .logo { height: 36px; max-width: 160px; }
+  .logo--tall { height: 48px; max-width: 64px; }
+  .row .head { opacity: 0.14; }
+  .case { grid-template-columns: 1fr; gap: 8px; }
+  .case .num { font-size: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tally .count, .row .head { transition: none; }
+}

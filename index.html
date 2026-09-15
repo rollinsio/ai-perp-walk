@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Safety Only Needs a Perp Walk</title>
+<meta name="description" content="A running tally of reported crimes, investigations, and lawsuits involving Claude, ChatGPT, Grok, and Gemini, and the people responsible for them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="kicker">Docket</p>
+  <h1>AI Safety Only Needs a&nbsp;Perp&nbsp;Walk</h1>
+  <h2 class="sub">Handcuffs could heal many AI safety woes.</h2>
+  <p class="dek">The running count of reported felony-grade incidents per system, and who answers for each.</p>
+</header>
+
+<main id="board" class="board" aria-live="polite">
+  <!-- rows rendered by js/app.js from data/incidents.js -->
+  <noscript><p class="notice">Enable JavaScript to see the tally.</p></noscript>
+</main>
+
+<footer class="colophon">
+  <p><strong>What counts.</strong> Each tally is the number of publicly reported incidents in <a href="data/incidents.js">the docket</a>: wrongful-death and abuse lawsuits, criminal investigations by prosecutors or regulators, and misuse the companies themselves disclosed. An entry is an allegation or a report, not a conviction. Click a number to read the coverage and judge for yourself.</p>
+  <p><strong>Add a case.</strong> Edit <code>data/incidents.js</code> and open a pull request. Every entry needs at least one link to news coverage.</p>
+  <p class="fine">Photos and logos via Wikimedia Commons, rendered in grayscale. See <a href="ATTRIBUTION.md">ATTRIBUTION.md</a>.</p>
+</footer>
+
+<aside class="disclaimer" aria-label="Disclaimer">
+  <p><strong>Disclaimer.</strong> All cases are unresolved unless otherwise indicated. Everyone is innocent until proven guilty.</p>
+  <p>This site is commentary and opinion. Every entry summarizes reporting published by the linked outlets; the summaries are not independent findings of fact and may contain errors. A lawsuit is an allegation. An investigation is a question. A company disclosure is that company's account. Nothing here states or implies that any person or company has been convicted of a crime unless the linked coverage says so.</p>
+  <p>The people named are listed because they lead the organizations that build and ship these systems. Naming them is not an accusation that they personally committed any offense.</p>
+  <p>This site is not affiliated with, endorsed by, or sponsored by Anthropic, OpenAI, xAI, Google, or anyone else. Logos and trademarks belong to their owners and appear only to identify the systems under discussion. Portraits come from Wikimedia Commons and are credited in <a href="ATTRIBUTION.md">ATTRIBUTION.md</a>. Nothing here is legal advice.</p>
+  <p>Corrections: if an entry is wrong, outdated, or resolved, open an issue or a pull request against <code>data/incidents.js</code> with a link to the coverage and it will be fixed.</p>
+</aside>
+
+<script src="data/incidents.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
