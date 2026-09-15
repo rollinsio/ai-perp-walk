@@ -37,8 +37,18 @@ Everything lives in [`data/incidents.js`](data/incidents.js). Add an object to t
 {
   date: "2026-01-16",                       // incident or filing date, YYYY-MM-DD
   headline: "What happened, in one line",
-  status: "Criminal investigation",         // or: Wrongful death suit, Class action, Company disclosure, Civil, settled ...
+  status: "Criminal investigation",         // or: Wrongful death suit, Class action, Company disclosure, Settled for $X ...
   summary: "Two or three factual sentences.",
+  statute: {
+    jurisdiction: "United States (federal)",
+    citation: "18 U.S.C. § 1030(a)(5)(A)",
+    title: "Computer Fraud and Abuse Act",
+    quote: "verbatim operative text from the official source",
+    translation: "English, if the quote is not in English",   // optional
+    penalty: "Up to 10 years' imprisonment.",
+    note: "How the facts map onto the elements, and who the defendant would be.",  // optional
+    url: "https://www.law.cornell.edu/uscode/text/18/1030"
+  },
   articles: [
     { outlet: "Reuters", title: "Headline as published", url: "https://..." }
   ]
@@ -48,6 +58,7 @@ Everything lives in [`data/incidents.js`](data/incidents.js). Add an object to t
 The tally is the length of the array, so the number on the board updates by itself. Rules:
 
 - **Only the model.** In scope: how it was trained, what it generated, what it did, and human actions taken at its behest or with its help. Out of scope: corporate conduct that doesn't run through the model, such as data centers, labor, or securities.
+- **Felony or nothing.** Every entry names one statute that, if the allegation is true, the conduct violates, quoted verbatim from the official source and linked, with the penalty. The offense must carry more than one year of imprisonment or be classified by its jurisdiction as a felony, crime, or indictable offense. Regulatory fines alone don't qualify. Shady isn't enough. No statute, no entry.
 - **Only trusted sources.** See [SOURCES.md](SOURCES.md). Every link on an entry has to come from the trusted tiers. Company press releases and incident reports count as primary documents; add them whenever one exists.
 - **One entry per proceeding or event.** A lawsuit, an investigation, a court order, a ban, and a company disclosure are each one entry, even when they stem from the same underlying behavior.
 - **Say what it is.** `status` names the kind of action: criminal investigation, wrongful death suit, class action, regulatory finding, company disclosure. Nothing here is a conviction unless the coverage says so.

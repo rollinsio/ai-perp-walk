@@ -200,6 +200,27 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 .case .summary { margin: 14px 0 0; color: #d6d6d6; max-width: 70ch; }
+.statute {
+  margin: 18px 0 0;
+  padding: 14px 18px;
+  border-left: 3px solid var(--hot);
+  background: #0a0a0a;
+  max-width: 78ch;
+}
+.statute-label { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--hot); }
+.statute-cite { margin: 0; font-weight: 600; }
+.statute-cite a { text-decoration-color: var(--mute); text-underline-offset: 3px; }
+.statute-cite a:hover { text-decoration-color: var(--hot); }
+.statute-title { font-weight: 400; color: #cfcfcf; }
+.statute-juris { font-weight: 400; color: var(--mute); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; margin-left: 6px; }
+.statute-quote { margin: 10px 0 0; padding: 0; color: var(--ink); font-size: 14px; line-height: 1.6; }
+.statute-quote::before { content: "\201C"; color: var(--hot); }
+.statute-quote::after { content: "\201D"; color: var(--hot); }
+.statute-translation { margin: 8px 0 0; color: #bdbdbd; font-size: 13px; font-style: italic; }
+.statute-penalty { margin: 10px 0 0; color: #e6e6e6; font-size: 13px; }
+.statute-penalty b { color: var(--hot); font-weight: 600; }
+.statute-note { margin: 8px 0 0; color: var(--mute); font-size: 13px; }
+
 .case .coverage { margin: 16px 0 0; padding: 0; list-style: none; }
 .case .coverage li { margin: 6px 0; }
 .case .coverage a { text-decoration-color: var(--mute); text-underline-offset: 3px; }
