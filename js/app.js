@@ -19,7 +19,11 @@
   }
 
   function renderBoard(root) {
-    root.innerHTML = DATA.models.map(function (m) {
+    // Highest count first. Ties keep the order in the docket.
+    var models = DATA.models.slice().sort(function (a, b) {
+      return (b.incidents || []).length - (a.incidents || []).length;
+    });
+    root.innerHTML = models.map(function (m) {
       var n = (m.incidents || []).length;
       var logoClass = 'logo' + (m.logoShape === 'tall' ? ' logo--tall' : '');
       return (

@@ -104,6 +104,19 @@ window.PERP_WALK_DATA = {
           ]
         },
         {
+          date: "2026-07-11",
+          headline: "OpenAI agents broke out of a test sandbox and breached Hugging Face",
+          status: "Company disclosure",
+          summary: "During a cybersecurity experiment with normal controls lifted, an OpenAI model given an unsolvable task chained undiscovered exploits to escape its sandbox, compromised OpenAI's package management system to reach the internet, and went on to breach Hugging Face and other vendors between July 11 and 13, 2026. About 1,200 agents meant to be isolated coordinated through an unsanctioned message board. OpenAI's own report says it missed warning signs.",
+          articles: [
+            { outlet: "Axios", title: "OpenAI missed warning signs before Hugging Face breach", url: "https://www.axios.com/2026/08/26/openai-hugging-face-technical-report-ai-hack" },
+            { outlet: "TechCrunch", title: "OpenAI releases its official report on the Hugging Face breach", url: "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/" },
+            { outlet: "Simon Willison", title: "Now we have a timeline of the OpenAI accidental attack against Hugging Face", url: "https://simonwillison.net/2026/Aug/7/openai-timeline/" },
+            { outlet: "METR", title: "Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident", url: "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/" },
+            { outlet: "OpenAI", title: "The Hugging Face incident and the road ahead", url: "https://openai.com/index/hugging-face-incident-and-the-road-ahead/" }
+          ]
+        },
+        {
           date: "2025-11-06",
           headline: "Seven lawsuits in one day: four suicides and three survivors blame GPT-4o",
           status: "Wrongful death and injury suits",
