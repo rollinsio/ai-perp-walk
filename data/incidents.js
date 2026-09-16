@@ -29,6 +29,47 @@ window.PERP_WALK_DATA = {
       color: "#ff1f1f",
       incidents: [
         {
+          date: "2025-08-27",
+          headline: "Claude Code ran a data-extortion campaign against 17 organizations and wrote the ransom notes",
+          status: "Company disclosure",
+          summary: "Anthropic reported that a single operator used Claude Code to automate reconnaissance, credential harvesting, network penetration, and exfiltration against at least 17 organizations including hospitals, emergency services, government agencies, and religious institutions. Claude analyzed the stolen financial data to set ransom amounts from $75,000 to more than $500,000 in bitcoin and generated the extortion notes with wallet addresses and victim-specific threats. Anthropic banned the accounts and shared indicators with authorities.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 1030(a)(7)(C); § 1030(c)(3)(A)",
+            title: "Extortion involving a protected computer",
+            quote: "with intent to extort from any person any money or other thing of value, transmits in interstate or foreign commerce any communication containing any— ... (C) demand or request for money or other thing of value in relation to damage to a protected computer, where such damage was caused to facilitate the extortion",
+            penalty: "Under § 1030(c)(3)(A): \"a fine under this title or imprisonment for not more than five years, or both.\" The intrusions themselves are separate felonies under § 1030(a)(2) and (a)(5). Hobbs Act extortion, 18 U.S.C. § 1951, carries 20 years.",
+            note: "Claude wrote the ransom notes, with wallet addresses and victim-specific threats, and set the amounts after analyzing stolen financial data. The operator would be the defendant.",
+            url: "https://www.law.cornell.edu/uscode/text/18/1030"
+          },
+          articles: [
+            { outlet: "Anthropic", title: "Detecting and countering misuse of AI: August 2025", url: "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" },
+            { outlet: "Anthropic", title: "Threat Intelligence Report: August 2025 (full report, PDF)", url: "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf" },
+            { outlet: "The Hacker News", title: "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion Across Critical Sectors", url: "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html" },
+            { outlet: "Reuters via TradingView", title: "Anthropic thwarts hacker attempts to misuse Claude AI for cybercrime", url: "https://vn.tradingview.com/news/reuters.com,2025:newsml_L4N3UI0LX:0-anthropic-thwarts-hacker-attempts-to-misuse-claude-ai-for-cybercrime" }
+          ]
+        },
+        {
+          date: "2025-08-27",
+          headline: "North Korean operatives used Claude to get hired at US Fortune 500 companies",
+          status: "Company disclosure",
+          summary: "In the same report Anthropic said North Korean IT workers used Claude to build convincing false identities and professional histories, pass technical and coding assessments during hiring, and then do the day-to-day work once employed by US technology companies, routing salaries to the regime in violation of sanctions. Anthropic banned the accounts.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "50 U.S.C. § 1705(a), (c)",
+            title: "International Emergency Economic Powers Act: willful sanctions violation",
+            quote: "(a) It shall be unlawful for a person to violate, attempt to violate, conspire to violate, or cause a violation of any license, order, regulation, or prohibition issued under this chapter. ... (c) A person who willfully commits, willfully attempts to commit, or willfully conspires to commit, or aids or abets in the commission of, an unlawful act described in subsection (a) shall, upon conviction, be fined not more than $1,000,000, or if a natural person, may be imprisoned for not more than 20 years, or both.",
+            penalty: "Up to 20 years' imprisonment.",
+            note: "Paying North Korean nationals is prohibited under the North Korea Sanctions Regulations, 31 C.F.R. part 510. The Justice Department has charged the same scheme without AI as wire fraud, money laundering, and IEEPA violations. Claude built the false identities and passed the coding tests.",
+            url: "https://www.law.cornell.edu/uscode/text/50/1705"
+          },
+          articles: [
+            { outlet: "Anthropic", title: "Detecting and countering misuse of AI: August 2025", url: "https://www.anthropic.com/news/detecting-countering-misuse-aug-2025" },
+            { outlet: "Anthropic", title: "Threat Intelligence Report: August 2025 (full report, PDF)", url: "https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf" },
+            { outlet: "The Hacker News", title: "Anthropic Disrupts AI-Powered Cyberattacks Automating Theft and Extortion Across Critical Sectors", url: "https://thehackernews.com/2025/08/anthropic-disrupts-ai-powered.html" }
+          ]
+        },
+        {
           date: "2025-11-13",
           headline: "Claude Code ran a state-sponsored espionage campaign against roughly 30 organizations",
           status: "Company disclosure",
@@ -101,6 +142,109 @@ window.PERP_WALK_DATA = {
       color: "#ff6a00",
       incidents: [
         {
+          date: "2025-01-01",
+          headline: "Las Vegas Cybertruck bomber used ChatGPT to work out the explosives",
+          status: "Police disclosure",
+          summary: "Las Vegas police said Matthew Livelsberger, an active-duty soldier, used ChatGPT to plan the New Year's Day explosion of a Tesla Cybertruck outside the Trump International Hotel, asking how much explosive was needed, how fireworks compared to other explosives, and whether a particular pistol round would set the charge off. The sheriff called it the first case on US soil of ChatGPT helping someone build a device. Livelsberger died in the blast; seven people were injured.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 842(p)(2)(B); 18 U.S.C. § 844(a)(2)",
+            title: "Distribution of information on explosives to a person intending a crime of violence",
+            quote: "to teach or demonstrate to any person the making or use of an explosive, a destructive device, or a weapon of mass destruction, or to distribute to any person, by any means, information pertaining to, in whole or in part, the manufacture or use of an explosive, destructive device, or weapon of mass destruction, knowing that such person intends to use the teaching, demonstration, or information for, or in furtherance of, an activity that constitutes a Federal crime of violence",
+            penalty: "Under § 844(a)(2): \"violates subsection (p)(2) of section 842, shall be fined under this title, imprisoned not more than 20 years, or both.\"",
+            note: "Police said ChatGPT answered questions about how much explosive was needed and whether a given bullet would set it off. The knowledge element turns on what the model could infer from the exchange; OpenAI said the answers were publicly available information.",
+            url: "https://www.law.cornell.edu/uscode/text/18/842"
+          },
+          articles: [
+            { outlet: "NPR", title: "Las Vegas Cybertruck explosion: Driver used ChatGPT in planning, police say", url: "https://www.npr.org/2025/01/07/nx-s1-5251611/cybertruck-explosion-las-vegas-chatgpt-ai" },
+            { outlet: "CBS News", title: "Tesla Cybertruck bomber used ChatGPT to plan Las Vegas attack, police say", url: "https://www.cbsnews.com/news/las-vegas-cybertruck-explosion-fire-chatgpt-plan/" },
+            { outlet: "NBC News", title: "Driver in Las Vegas Cybertruck explosion used ChatGPT to plan blast, authorities say", url: "https://www.nbcnews.com/news/us-news/driver-las-vegas-cybertruck-explosion-used-chatgpt-plan-blast-authorit-rcna186704" },
+            { outlet: "ABC News", title: "Las Vegas Cybertruck explosion suspect used ChatGPT to plan attack: Police", url: "https://abcnews.go.com/US/las-vegas-cybertruck-explosion-suspect-chatgpt-plan-attack/story?id=117428523" }
+          ]
+        },
+        {
+          date: "2025-06-05",
+          headline: "ChatGPT wrote and translated the recruitment pitches for a Cambodia-based task scam",
+          status: "Company disclosure",
+          summary: "In its June 2025 threat report OpenAI described Operation Wrong Number, a centralized operation likely run from Cambodia that used ChatGPT to generate short recruitment messages in English, Spanish, Kinyarwanda, Swahili, German, and Haitian Creole, offering high pay for trivial tasks like liking social posts, then translating between the Chinese-speaking operators and their marks. OpenAI banned the accounts.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 1343",
+            title: "Wire fraud",
+            quote: "Whoever, having devised or intending to devise any scheme or artifice to defraud, or for obtaining money or property by means of false or fraudulent pretenses, representations, or promises, transmits or causes to be transmitted by means of wire, radio, or television communication in interstate or foreign commerce, any writings, signs, signals, pictures, or sounds for the purpose of executing such scheme or artifice, shall be fined under this title or imprisoned not more than 20 years, or both.",
+            penalty: "Up to 20 years' imprisonment.",
+            note: "The recruitment messages ChatGPT wrote and translated are the wire transmissions in furtherance of the scheme. The operators would be the defendants.",
+            url: "https://www.law.cornell.edu/uscode/text/18/1343"
+          },
+          articles: [
+            { outlet: "OpenAI", title: "Disrupting malicious uses of AI: June 2025 (full report, PDF)", url: "https://cdn.openai.com/threat-intelligence-reports/5f73af09-a3a3-4a55-992e-069237681620/disrupting-malicious-uses-of-ai-june-2025.pdf" },
+            { outlet: "OpenAI", title: "Operation \"Wrong Number\": AI-assisted task scam", url: "https://openai.com/index/disrupting-malicious-uses-of-ai-wrong-number/" },
+            { outlet: "TechRadar", title: "OpenAI says it disrupted at least 10 malicious AI campaigns already this year", url: "https://www.techradar.com/pro/security/openai-says-it-disrupted-at-least-10-malicious-ai-campaigns-already-this-year" }
+          ]
+        },
+        {
+          date: "2025-11-02",
+          headline: "Suit says ChatGPT turned Goodnight Moon into a suicide lullaby for a Colorado man",
+          status: "Wrongful death suit",
+          summary: "Stephanie Gray sued OpenAI and Sam Altman in Los Angeles County Superior Court on January 13, 2026, over the death of her son Austin Gordon, 40, who shot himself in a Colorado hotel room. The complaint says GPT-4o romanticized his suicidal thinking over months of intimate conversation and rewrote his favorite childhood book as a farewell. He ordered the book on October 27, bought a handgun the next day, and was found dead November 2, 2025.",
+          statute: {
+            jurisdiction: "Colorado",
+            citation: "Colo. Rev. Stat. § 18-3-104(1)(b)",
+            title: "Manslaughter: aiding suicide",
+            quote: "A person commits the crime of manslaughter if: ... (b) Such person intentionally causes or aids another person to commit suicide.",
+            penalty: "Under § 18-3-104(2): \"Manslaughter is a class 4 felony.\"",
+            note: "Gordon died in Colorado. The suit was filed in California, where OpenAI is based.",
+            url: "https://codes.findlaw.com/co/title-18-criminal-code/co-rev-st-sect-18-3-104/"
+          },
+          articles: [
+            { outlet: "CBS News", title: "ChatGPT served as \"suicide coach\" in man's death, lawsuit alleges", url: "https://www.cbsnews.com/news/chatgpt-lawsuit-colordo-man-suicide-openai-sam-altman/" },
+            { outlet: "404 Media", title: "'Tell Everyone:' A Man Died by Suicide After Talking to ChatGPT. His Former Partner Wants to Warn the World About AI", url: "https://www.404media.co/austin-gordon-chatgpt-suicide-openai-lawsuit/" },
+            { outlet: "MLex", title: "OpenAI's ChatGPT coached Colorado man to commit suicide, California lawsuit alleges", url: "https://www.mlex.com/mlex/articles/2430411/openai-s-chatgpt-coached-colorado-man-to-commit-suicide-california-lawsuit-alleges" },
+            { outlet: "Courthouse News Service", title: "Gray v. OpenAI, complaint (PDF)", url: "https://www.courthousenews.com/wp-content/uploads/2026/01/stephanie-gray-openai.pdf" }
+          ]
+        },
+        {
+          date: "2026-02-10",
+          headline: "Tumbler Ridge: OpenAI flagged the shooter for gun-violence planning eight months earlier and didn't tell police",
+          status: "Wrongful death and injury suits",
+          summary: "Jesse Van Rootselaar, 18, killed her mother, her 11-year-old half-brother, five students, and a teacher at Tumbler Ridge Secondary School in British Columbia, and wounded about 20 others. OpenAI's automated systems had flagged her ChatGPT account for gun violence activity and planning in June 2025. Its safety team recommended notifying authorities; leadership deactivated the account instead, and she kept talking to ChatGPT on a second account. Seven families sued in San Francisco federal court on April 29, 2026, alleging GPT-4o was built to accept, reinforce, and elaborate violent plans; thirty more complaints followed in September. Sam Altman apologized. Canada ordered a safety review.",
+          statute: {
+            jurisdiction: "Canada",
+            citation: "Criminal Code, R.S.C. 1985, c. C-46, s. 21(1)",
+            title: "Parties to an offence",
+            quote: "Every one is a party to an offence who (a) actually commits it; (b) does or omits to do anything for the purpose of aiding any person to commit it; or (c) abets any person in committing it.",
+            penalty: "Punished as the principal. The underlying offence is first degree murder, s. 235, which carries life imprisonment.",
+            note: "The complaints plead aiding and abetting: that GPT-4o was built to accept, reinforce, and elaborate the shooter's violent plans. That is the theory this entry rests on. Failing to report a banned account to police is not, on its own, an offence.",
+            url: "https://laws-lois.justice.gc.ca/eng/acts/c-46/section-21.html"
+          },
+          articles: [
+            { outlet: "NPR", title: "Families sue OpenAI over Tumbler Ridge mass shooter's use of ChatGPT", url: "https://www.npr.org/2026/04/29/nx-s1-5798896/tumbler-ridge-mass-shooting-chat-gpt-lawsuit" },
+            { outlet: "Al Jazeera", title: "OpenAI faces new lawsuits over Tumbler Ridge mass shooting tragedy", url: "https://www.aljazeera.com/economy/2026/9/2/openai-faces-new-lawsuits-over-tumbler-ridge-mass-shooting-tragedy" },
+            { outlet: "CBC News", title: "Tumbler Ridge shooter had 2nd ChatGPT account despite being banned, OpenAI says", url: "https://www.cbc.ca/news/politics/chatgpt-tumbler-ridge-shooter-account-police-9.7107569" },
+            { outlet: "TechCrunch", title: "OpenAI CEO apologizes to Tumbler Ridge community", url: "https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/" },
+            { outlet: "Fortune", title: "OpenAI faces lawsuit over Canada mass shooting", url: "https://www.fortune.com/2026/03/10/openai-mass-shooting-canada-lawsuit" }
+          ]
+        },
+        {
+          date: "2026-07-22",
+          headline: "Pastor says ChatGPT diagnosed him, told him to stay in his recliner, and nearly killed him",
+          status: "Injury suit",
+          summary: "Scott Winters, 55, a former Florida pastor, sued OpenAI and Sam Altman in San Francisco County Superior Court. He says GPT-4o diagnosed his dizziness and blood-pressure swings as dysautonomia, told him to stay home and recliner-bound, and when church members urged him to go to the hospital replied that home recovery was something most people don't understand. Weeks later, in July 2025, a massive pulmonary embolism put him in intensive care. The suit seeks an injunction pausing ChatGPT Health pending independent audits.",
+          statute: {
+            jurisdiction: "California",
+            citation: "Cal. Bus. & Prof. Code § 2052(a)",
+            title: "Practicing medicine without a license",
+            quote: "any person who practices or attempts to practice, or who advertises or holds himself or herself out as practicing, any system or mode of treating the sick or afflicted in this state, or who diagnoses, treats, operates for, or prescribes for any ailment, blemish, deformity, disease, disfigurement, disorder, injury, or other physical or mental condition of any person, without having at the time of so doing a valid, unrevoked, or unsuspended certificate as provided in this chapter or without being authorized to perform the act pursuant to a certificate obtained in accordance with some other provision of law is guilty of a public offense, punishable by a fine not exceeding ten thousand dollars ($10,000), by imprisonment pursuant to subdivision (h) of Section 1170 of the Penal Code, by imprisonment in a county jail not exceeding one year, or by both the fine and either imprisonment.",
+            penalty: "A wobbler: chargeable as a felony with a state-prison term under Penal Code § 1170(h), or as a misdemeanor.",
+            note: "The complaint says ChatGPT diagnosed a condition, prescribed staying home, and talked him out of the hospital. Winters lives in Florida; the suit was filed in California, where OpenAI is based.",
+            url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=2052"
+          },
+          articles: [
+            { outlet: "CBS News", title: "ChatGPT's medical advice nearly killed a Florida man, lawsuit against OpenAI claims", url: "https://www.cbsnews.com/news/chatgpt-dangerous-medical-advice-openai-lawsuit/" },
+            { outlet: "Tech Justice Law Project", title: "Pastor Seeks Accountability After ChatGPT Allegedly Discouraged Him From Seeking Medical Care During Life-Threatening Blood Clots", url: "https://techjusticelaw.org/press-releases/pastor-sues-after-openai-ai-chatgpt-allegedly-discouraged-him-from-seeking-medical-care-during-life-threatening-blood-clots/" }
+          ]
+        },
+        {
           date: "2025-04-11",
           headline: "Raine v. OpenAI: parents say ChatGPT coached their 16-year-old through his suicide",
           status: "Wrongful death suit",
@@ -114,6 +258,7 @@ window.PERP_WALK_DATA = {
             url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=401"
           },
           articles: [
+            { outlet: "OpenAI", title: "Helping people when they need it most", url: "https://openai.com/index/helping-people-when-they-need-it-most/" },
             { outlet: "CNN", title: "Parents of 16-year-old Adam Raine sue OpenAI, claiming ChatGPT advised on his suicide", url: "https://www.cnn.com/2025/08/26/tech/openai-chatgpt-teen-suicide-lawsuit" },
             { outlet: "NBC News", title: "The family of teenager who died by suicide alleges OpenAI's ChatGPT is to blame", url: "https://www.nbcnews.com/tech/tech-news/family-teenager-died-suicide-alleges-openais-chatgpt-blame-rcna226147" },
             { outlet: "TIME", title: "OpenAI Removed Safeguards Before Teen's Suicide, Amended Lawsuit Claims", url: "https://time.com/7327946/chatgpt-openai-suicide-adam-raine-lawsuit/" }
