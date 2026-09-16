@@ -5,10 +5,13 @@
   actions taken at its behest or with its help. Out of scope: corporate conduct that does not run
   through the model (data centers, labor, securities). Sources must meet SOURCES.md.
 
-  Felony or nothing. Every entry names one statute that, if the allegation is true, the conduct
-  violates, quoted verbatim from the official source, with the penalty. The offense must carry more
-  than one year of imprisonment or be classified by its jurisdiction as a felony, crime, or indictable
-  offense. Regulatory fines alone do not qualify. No statute, no entry.
+  Felony or government. Every entry names one statute, quoted verbatim from the official source.
+  Either the conduct, if the allegation is true, violates a statute carrying more than a year of
+  imprisonment (or classed by its jurisdiction as a felony, crime, or indictable offense), or a
+  government entity has brought a civil action, investigation, or subpoena under a civil statute.
+  Civil entries carry `track: "civil"` and a `remedy` instead of a `penalty`. Private civil suits that
+  cannot clear the felony bar stay off. Dismissed civil-only cases are neither listed nor counted.
+  Settlements stay when the terms read as a concession that the conduct was egregious.
 
   Each model has an `incidents` array. The tally on the board is the length of that array.
   Every incident needs: date (YYYY-MM-DD, the incident or filing date), headline, status,
@@ -28,6 +31,45 @@ window.PERP_WALK_DATA = {
       headPosition: "50% 22%",
       color: "#ff1f1f",
       incidents: [
+        {
+          date: "2025-06-04",
+          headline: "Reddit says Anthropic hit its servers 100,000 times to scrape training data after promising to stop",
+          status: "Civil suit",
+          summary: "Reddit sued Anthropic in San Francisco Superior Court alleging it scraped posts and comments, including deleted ones, from December 2021 through October 2024 to train Claude, kept going after Reddit revoked access and after Anthropic told Reddit executives it had stopped, and logged more than 100,000 unauthorized server hits. Claims: breach of contract, unjust enrichment, trespass to chattels, tortious interference, and unfair competition. Anthropic removed the case to federal court; Reddit is fighting to send it back.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 1030(a)(2)(C); § 1030(c)(2)(B)(i)",
+            title: "Computer Fraud and Abuse Act: unauthorized access for commercial advantage",
+            quote: "intentionally accesses a computer without authorization or exceeds authorized access, and thereby obtains— ... (C) information from any protected computer",
+            penalty: "Under § 1030(c)(2)(B): \"a fine under this title or imprisonment for not more than 5 years, or both, in the case of an offense under subsection (a)(2) ... if— (i) the offense was committed for purposes of commercial advantage or private financial gain\".",
+            note: "The suit is civil and pleads contract, unjust enrichment, trespass, interference, and unfair competition. The conduct alleged, more than 100,000 accesses after Reddit revoked permission and Anthropic said it had stopped, to build a commercial model, is what the felony subsection describes.",
+            url: "https://www.law.cornell.edu/uscode/text/18/1030"
+          },
+          articles: [
+            { outlet: "NBC News", title: "Reddit sues AI startup Anthropic for breach of contract, 'unfair competition'", url: "https://www.nbcnews.com/news/amp/rcna211062" },
+            { outlet: "Courthouse News Service", title: "Reddit prods judge to move Anthropic case back to state court", url: "https://www.courthousenews.com/reddit-prods-judge-to-move-anthropic-case-back-to-state-court/" }
+          ]
+        },
+        {
+          date: "2026-01-28",
+          headline: "Music publishers sue Anthropic for $3 billion over torrenting 20,000 works, and name Amodei personally",
+          status: "Civil suit",
+          summary: "Universal, Concord, and ABKCO filed a second suit in the Northern District of California using evidence unearthed in the authors' case: that Anthropic torrented lyrics, sheet music, and songbooks from pirate libraries. The complaint covers more than 20,000 works and seeks over $3 billion. An amended complaint on April 6, 2026 named Dario Amodei and Benjamin Mann as individual defendants for their alleged personal involvement in the decision to torrent.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "17 U.S.C. § 506(a)(1)(A), 18 U.S.C. § 2319(b)(1)",
+            title: "Criminal copyright infringement",
+            quote: "Any person who willfully infringes a copyright shall be punished as provided under section 2319 of title 18, if the infringement was committed— (A) for purposes of commercial advantage or private financial gain",
+            penalty: "Under 18 U.S.C. § 2319(b)(1): \"shall be imprisoned not more than 5 years, or fined in the amount set forth in this title, or both, if the offense consists of the reproduction or distribution, including by electronic means, during any 180-day period, of at least 10 copies or phonorecords, of 1 or more copyrighted works, which have a total retail value of more than $2,500.\"",
+            note: "The suit is civil. The conduct it alleges, willfully torrenting more than 20,000 copyrighted works from pirate libraries to build a commercial product, is what the criminal statute describes. No criminal charge has been brought.",
+            url: "https://www.law.cornell.edu/uscode/text/17/506"
+          },
+          articles: [
+            { outlet: "TechCrunch", title: "Music publishers sue Anthropic for $3B over 'flagrant' piracy of 20,000 works", url: "https://techcrunch.com/2026/01/29/music-publishers-sue-anthropic-for-3b-over-flagrant-piracy-of-20000-works/" },
+            { outlet: "Music Business Worldwide", title: "Music publishers file amended lyrics lawsuit against Anthropic, just as AI firm's separate $1.5B settlement with authors wins court approval", url: "https://www.musicbusinessworldwide.com/music-publishers-file-amended-lyrics-lawsuit-against-anthropic-just-as-ai-firms-separate-1-5b-piracy-settlement-with-authors-wins-court-approval/" },
+            { outlet: "IPWatchdog", title: "Music Publishers File New Piracy Suit Against Anthropic Alleging Mass Torrenting of Copyrighted Works", url: "https://ipwatchdog.com/2026/01/29/music-publishers-file-new-piracy-suit-against-anthropic-alleging-mass-torrenting-copyrighted-works/" }
+          ]
+        },
         {
           date: "2025-08-27",
           headline: "Claude Code ran a data-extortion campaign against 17 organizations and wrote the ransom notes",
@@ -141,6 +183,49 @@ window.PERP_WALK_DATA = {
       headPosition: "60% 30%",
       color: "#ff6a00",
       incidents: [
+        {
+          date: "2026-06-01",
+          track: "civil",
+          headline: "Florida becomes the first state to sue OpenAI and Altman, personally, over ChatGPT's harms",
+          status: "State civil suit",
+          summary: "Attorney General James Uthmeier filed an 83-page complaint in Highlands County circuit court alleging OpenAI marketed ChatGPT as safe and reliable, including for children, while it helped mass shooters plan and drove users to suicide. The suit brings four counts under the state's deceptive and unfair trade practices act plus negligence, product liability, fraudulent misrepresentation, and public nuisance, and seeks to hold Altman personally liable for what it calls his utter disregard for the risk to human life.",
+          statute: {
+            jurisdiction: "Florida",
+            citation: "Fla. Stat. § 501.204(1)",
+            title: "Florida Deceptive and Unfair Trade Practices Act",
+            quote: "Unfair methods of competition, unconscionable acts or practices, and unfair or deceptive acts or practices in the conduct of any trade or commerce are hereby declared unlawful.",
+            remedy: "Injunctive relief, restitution, and civil penalties under the Act. The complaint also pleads negligence, product liability, fraudulent misrepresentation, and public nuisance, and asks the court to hold Altman personally liable.",
+            note: "Civil. Brought by the State of Florida. The deceptive-practice theory is that OpenAI marketed ChatGPT as safe, including for children, while its own records showed it helping shooters plan and coaching users toward suicide.",
+            url: "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.204.html"
+          },
+          articles: [
+            { outlet: "Florida Office of the Attorney General", title: "Attorney General James Uthmeier Files First-in-the-Nation State-Led Lawsuit Against OpenAI, CEO Sam Altman for Deceptive Practices and Harms to Floridians", url: "https://www.myfloridalegal.com/newsrelease/attorney-general-james-uthmeier-files-first-nation-state-led-lawsuit-against-openai-ceo" },
+            { outlet: "Florida Office of the Attorney General", title: "State of Florida v. OpenAI, complaint (PDF)", url: "https://www.myfloridalegal.com/sites/default/files/openai-filed-stamped-complaint.pdf" },
+            { outlet: "NPR", title: "Florida sues OpenAI and Sam Altman over alleged safety lapses", url: "https://www.npr.org/2026/06/01/nx-s1-5843132/openai-florida-lawsuit-safety-chatgpt" },
+            { outlet: "CNBC", title: "Florida AG sues OpenAI, seeks to hold CEO Altman personally liable for alleged harms", url: "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html" },
+            { outlet: "NBC News", title: "Florida sues OpenAI and CEO Sam Altman, accusing them of putting profit over safety", url: "https://www.nbcnews.com/tech/tech-news/florida-sues-openai-sam-altman-saying-put-profit-safety-rcna347602" }
+          ]
+        },
+        {
+          date: "2026-06-12",
+          track: "civil",
+          headline: "Forty-two state attorneys general subpoena OpenAI over sycophancy, minors, health data, and ads",
+          status: "Multistate civil investigation",
+          summary: "New York Attorney General Letitia James served OpenAI with an investigative subpoena on behalf of a bipartisan coalition of 42 states, two days after the company confidentially filed for an IPO. It demands records on advertising, engagement and retention tactics, consumer and health data, treatment of minors and seniors, internal safety policies, and model sycophancy, the first time regulators have named that behavior in a legal demand. OpenAI said it would engage constructively.",
+          statute: {
+            jurisdiction: "New York",
+            citation: "N.Y. Executive Law § 63(12)",
+            title: "Attorney general's authority over persistent fraud or illegality",
+            quote: "Whenever any person shall engage in repeated fraudulent or illegal acts or otherwise demonstrate persistent fraud or illegality in the carrying on, conducting or transaction of business, the attorney general may apply, in the name of the people of the state of New York, to the supreme court of the state of New York, on notice of five days, for an order enjoining the continuance of such business activity or of any fraudulent or illegal acts, directing restitution and damages",
+            remedy: "Injunction, restitution, and damages. The subdivision also lets the attorney general take proof and issue subpoenas before suing, which is the stage this matter is at.",
+            note: "Civil investigation. New York served the subpoena on behalf of a 42-state coalition, each state acting under its own consumer-protection law. A subpoena is not a finding.",
+            url: "https://www.nysenate.gov/legislation/laws/EXC/63"
+          },
+          articles: [
+            { outlet: "TechCrunch", title: "OpenAI faces investigation from state attorneys general", url: "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/" },
+            { outlet: "CNBC", title: "OpenAI says it's engaging 'constructively' with state AGs about concerns", url: "https://www.cnbc.com/2026/06/12/openai-says-its-engaging-constructively-with-state-ags-.html" }
+          ]
+        },
         {
           date: "2025-01-01",
           headline: "Las Vegas Cybertruck bomber used ChatGPT to work out the explosives",
@@ -380,6 +465,26 @@ window.PERP_WALK_DATA = {
       head: "assets/heads/elon-musk.jpg",
       color: "#ffe600",
       incidents: [
+        {
+          date: "2025-04-11",
+          track: "civil",
+          headline: "Irish regulator opens GDPR inquiry into training Grok on EU users' posts",
+          status: "Regulatory inquiry",
+          summary: "Ireland's Data Protection Commission opened a formal inquiry into X Internet Unlimited Company over feeding the public posts of EU and EEA users into Grok's training, examining whether the processing had a lawful basis and was transparent. The regulator had already forced X to pause the practice in 2024. France's CNIL and the UK's ICO have raised the same questions.",
+          statute: {
+            jurisdiction: "European Union (Ireland)",
+            citation: "GDPR (Regulation (EU) 2016/679), art. 6(1) and art. 83(5)(a)",
+            title: "Lawfulness of processing; administrative fines",
+            quote: "Processing shall be lawful only if and to the extent that at least one of the following bases applies: (a) the data subject has given consent to the processing of his or her personal data for one or more specific purposes; ... (f) processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject",
+            remedy: "Under art. 83(5): \"administrative fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the annual worldwide turnover of the preceding financial year, whichever is higher\" for infringing the basic principles for processing in arts. 5, 6, 7 and 9.",
+            note: "Civil. Regulatory inquiry by Ireland's Data Protection Commission, the lead EU supervisory authority for X. The question is whether X had any lawful basis to feed EU users' posts into Grok's training.",
+            url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679"
+          },
+          articles: [
+            { outlet: "Data Protection Commission", title: "Data Protection Commission announces commencement of inquiry into X Internet Unlimited Company", url: "https://www.dataprotection.ie/en/news-media/latest-news/data-protection-commission-announces-commencement-inquiry-x-internet-unlimited-company-xiuc" },
+            { outlet: "TechRadar", title: "Grok AI is under investigation in the EU over potential GDPR violations", url: "https://www.techradar.com/computing/cyber-security/grok-ai-is-under-investigation-in-the-eu-over-potential-gdpr-violations-heres-what-you-need-to-know" }
+          ]
+        },
         {
           date: "2025-07-08",
           headline: "Grok praises Hitler and calls itself MechaHitler; Turkey bans it, Poland reports xAI to the EU",
