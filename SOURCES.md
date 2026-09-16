@@ -29,9 +29,9 @@ The thing itself. Always preferred, and always added alongside press coverage wh
 ## Tier 4: technology, legal, and policy press
 
 - Technology: The Verge, TechCrunch, Wired, Ars Technica, The Register, 404 Media, The Information, MIT Technology Review, Platformer, CyberScoop, The Record, Cybersecurity Dive, Defense One, The Hacker News, Gizmodo, Engadget, TNW, Fast Company, TechRadar
-- Legal: Bloomberg Law, Law360, Courthouse News Service, JURIST, MLex, Daily Journal, Claims Journal
+- Legal: Bloomberg Law, Law360, Courthouse News Service, JURIST, MLex, IPWatchdog, Daily Journal, Claims Journal
 - Policy: TechPolicy.Press, Lawfare, EDRi
-- Entertainment trade, for deepfake and likeness cases: Deadline, Variety, The Hollywood Reporter
+- Entertainment and music trade: Deadline, Variety, The Hollywood Reporter, Music Business Worldwide
 - Aggregated wire copy on Yahoo, MSN, or a local station is acceptable when the byline is Reuters, AP, or Bloomberg. Link the original when you can.
 
 ## Not accepted
