@@ -25,6 +25,7 @@
     });
     root.innerHTML = models.map(function (m) {
       var n = (m.incidents || []).length;
+      var civil = (m.incidents || []).filter(function (i) { return i.track === 'civil'; }).length;
       var logoClass = 'logo' + (m.logoShape === 'tall' ? ' logo--tall' : '');
       return (
         '<section class="row" style="--hot:' + esc(m.color) + '" aria-label="' + esc(m.name) + '">' +
@@ -39,6 +40,7 @@
              'aria-label="' + n + ' reported incidents for ' + esc(m.name) + '. Open the case file.">' +
             '<span class="count">' + n + '</span>' +
             '<span class="label">' + (n === 1 ? 'incident' : 'incidents') + '</span>' +
+            (civil ? '<span class="label label-civil">' + civil + ' civil</span>' : '') +
           '</a>' +
         '</section>'
       );
@@ -46,17 +48,18 @@
   }
 
 
-  function renderStatute(st) {
+  function renderStatute(st, civil) {
     if (!st || !st.citation) return '';
     return (
-      '<div class="statute">' +
-        '<p class="statute-label">The statute</p>' +
+      '<div class="statute' + (civil ? ' statute--civil' : '') + '">' +
+        '<p class="statute-label">' + (civil ? 'The statute (civil)' : 'The statute') + '</p>' +
         '<p class="statute-cite"><a href="' + esc(st.url) + '" rel="noopener" target="_blank">' + esc(st.citation) + '</a>' +
           (st.title ? ' <span class="statute-title">' + esc(st.title) + '</span>' : '') +
           (st.jurisdiction ? ' <span class="statute-juris">' + esc(st.jurisdiction) + '</span>' : '') + '</p>' +
         '<blockquote class="statute-quote">' + esc(st.quote) + '</blockquote>' +
         (st.translation ? '<p class="statute-translation">' + esc(st.translation) + '</p>' : '') +
         (st.penalty ? '<p class="statute-penalty"><b>Penalty.</b> ' + esc(st.penalty) + '</p>' : '') +
+        (st.remedy ? '<p class="statute-penalty"><b>Remedy.</b> ' + esc(st.remedy) + '</p>' : '') +
         (st.note ? '<p class="statute-note">' + esc(st.note) + '</p>' : '') +
       '</div>'
     );
@@ -96,8 +99,9 @@
             '<p class="date">' + esc(fmtDate(c.date)) + '</p>' +
             '<h2>' + esc(c.headline) + '</h2>' +
             (c.status ? '<span class="status">' + esc(c.status) + '</span>' : '') +
+            (c.track === 'civil' ? '<span class="status status--civil">Civil</span>' : '') +
             (c.summary ? '<p class="summary">' + esc(c.summary) + '</p>' : '') +
-            renderStatute(c.statute) +
+            renderStatute(c.statute, c.track === 'civil') +
             '<ul class="coverage">' + links + '</ul>' +
           '</div>' +
         '</article>'

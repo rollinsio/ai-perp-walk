@@ -164,6 +164,7 @@ a { color: inherit; }
   text-transform: uppercase;
   color: var(--hot);
 }
+.tally .label-civil { color: var(--mute); margin-top: 4px; }
 .tally:hover .count, .tally:focus-visible .count {
   transform: scale(1.04);
   text-shadow: 0 0 48px var(--hot);
@@ -199,6 +200,7 @@ a { color: inherit; }
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+.case .status--civil { margin-left: 6px; border-color: var(--mute); color: var(--mute); }
 .case .summary { margin: 14px 0 0; color: #d6d6d6; max-width: 70ch; }
 .statute {
   margin: 18px 0 0;
@@ -208,6 +210,8 @@ a { color: inherit; }
   max-width: 78ch;
 }
 .statute-label { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--hot); }
+.statute--civil { border-left-color: var(--mute); }
+.statute--civil .statute-label, .statute--civil .statute-quote::before, .statute--civil .statute-quote::after, .statute--civil .statute-penalty b { color: #cfcfcf; }
 .statute-cite { margin: 0; font-weight: 600; }
 .statute-cite a { text-decoration-color: var(--mute); text-underline-offset: 3px; }
 .statute-cite a:hover { text-decoration-color: var(--hot); }
