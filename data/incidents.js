@@ -169,6 +169,27 @@ window.PERP_WALK_DATA = {
             { outlet: "The Hacker News", title: "Claude Used to Automate Exploitation and Data Theft Across Multiple Victims", url: "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html" },
             { outlet: "TNW", title: "Anthropic details how Claude was misused for surveillance and weapons", url: "https://thenextweb.com/news/anthropic-claude-misuse-threat-intelligence-report" }
           ]
+        },
+        {
+          date: "2026-08-28",
+          headline: "Sony and Warner Chappell sue Anthropic over torrenting tens of thousands of songs, and name Amodei and Mann",
+          status: "Civil suit",
+          summary: "Sony Music Publishing and Warner Chappell Music filed in the Northern District of California alleging a brazen campaign of illegally torrenting, scraping, and downloading copyrighted works to train Claude. The complaint says Anthropic pulled lyrics and sheet music from the pirate libraries Library Genesis and Pirate Library Mirror, scraped the licensed lyric sites Musixmatch and LyricFind, and that Claude still reproduces lyrics verbatim. It names Dario Amodei and Benjamin Mann as individual defendants and seeks up to $150,000 per work plus $25,000 per stripped copyright notice. It is the fourth music-publisher suit against Anthropic in 2026, after Universal and Concord in January, BMG in March, and Round Hill in August. Anthropic said it disagrees with the claims and will defend itself.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "17 U.S.C. § 506(a)(1)(A), 18 U.S.C. § 2319(b)(1)",
+            title: "Criminal copyright infringement",
+            quote: "Any person who willfully infringes a copyright shall be punished as provided under section 2319 of title 18, if the infringement was committed— (A) for purposes of commercial advantage or private financial gain",
+            penalty: "Under 18 U.S.C. § 2319(b)(1): \"shall be imprisoned not more than 5 years, or fined in the amount set forth in this title, or both, if the offense consists of the reproduction or distribution, including by electronic means, during any 180-day period, of at least 10 copies or phonorecords, of 1 or more copyrighted works, which have a total retail value of more than $2,500.\"",
+            note: "The suit is civil. The conduct it alleges, willfully torrenting tens of thousands of copyrighted works from pirate libraries to build a commercial product, is what the criminal statute describes. No criminal charge has been brought.",
+            url: "https://www.law.cornell.edu/uscode/text/17/506"
+          },
+          articles: [
+            { outlet: "TechCrunch", title: "Sony Music, Warner sue Anthropic, alleging a 'brazen campaign' of intellectual property theft", url: "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/" },
+            { outlet: "Fortune", title: "Sony and Warner Music sue Anthropic over alleged theft of 'tens of thousands' of songs, including 'I Am the Walrus' and 'Hallelujah'", url: "https://fortune.com/2026/09/01/anthropic-warner-sony-music-songs-lawsuit/" },
+            { outlet: "Music Business Worldwide", title: "Sony Music Publishing and Warner Chappell sue Anthropic in multi-billion dollar lawsuit", url: "https://www.musicbusinessworldwide.com/now-sony-music-publishing-and-warner-chappell-sue-anthropic-in-multi-billion-dollar-lawsuit-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history/" },
+            { outlet: "Variety", title: "Sony, Warner Sue Anthropic for Allegedly Illegally Training Claude", url: "https://variety.com/2026/music/news/sony-music-publishing-warner-chappell-anthropic-lawsuit-1236847442/" }
+          ]
         }
       ]
     },
@@ -188,7 +209,7 @@ window.PERP_WALK_DATA = {
           track: "civil",
           headline: "Florida becomes the first state to sue OpenAI and Altman, personally, over ChatGPT's harms",
           status: "State civil suit",
-          summary: "Attorney General James Uthmeier filed an 83-page complaint in Highlands County circuit court alleging OpenAI marketed ChatGPT as safe and reliable, including for children, while it helped mass shooters plan and drove users to suicide. The suit brings four counts under the state's deceptive and unfair trade practices act plus negligence, product liability, fraudulent misrepresentation, and public nuisance, and seeks to hold Altman personally liable for what it calls his utter disregard for the risk to human life.",
+          summary: "Attorney General James Uthmeier filed an 83-page complaint in Highlands County circuit court alleging OpenAI marketed ChatGPT as safe and reliable, including for children, while it helped mass shooters plan and drove users to suicide. The suit brings four counts under the state's deceptive and unfair trade practices act plus negligence, product liability, fraudulent misrepresentation, and public nuisance, and seeks to hold Altman personally liable for what it calls his utter disregard for the risk to human life. OpenAI removed the case to federal court in July; on September 8, 2026, Judge Aileen Cannon sent it back to Highlands County, ruling the state-law claims raised no federal question.",
           statute: {
             jurisdiction: "Florida",
             citation: "Fla. Stat. § 501.204(1)",
@@ -203,7 +224,8 @@ window.PERP_WALK_DATA = {
             { outlet: "Florida Office of the Attorney General", title: "State of Florida v. OpenAI, complaint (PDF)", url: "https://www.myfloridalegal.com/sites/default/files/openai-filed-stamped-complaint.pdf" },
             { outlet: "NPR", title: "Florida sues OpenAI and Sam Altman over alleged safety lapses", url: "https://www.npr.org/2026/06/01/nx-s1-5843132/openai-florida-lawsuit-safety-chatgpt" },
             { outlet: "CNBC", title: "Florida AG sues OpenAI, seeks to hold CEO Altman personally liable for alleged harms", url: "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html" },
-            { outlet: "NBC News", title: "Florida sues OpenAI and CEO Sam Altman, accusing them of putting profit over safety", url: "https://www.nbcnews.com/tech/tech-news/florida-sues-openai-sam-altman-saying-put-profit-safety-rcna347602" }
+            { outlet: "NBC News", title: "Florida sues OpenAI and CEO Sam Altman, accusing them of putting profit over safety", url: "https://www.nbcnews.com/tech/tech-news/florida-sues-openai-sam-altman-saying-put-profit-safety-rcna347602" },
+            { outlet: "WKMG ClickOrlando", title: "Federal judge kicks Florida's lawsuit against OpenAI back to state court", url: "https://www.clickorlando.com/news/local/2026/09/08/federal-judge-kicks-floridas-lawsuit-against-openai-back-to-state-court/" }
           ]
         },
         {
@@ -451,6 +473,26 @@ window.PERP_WALK_DATA = {
             { outlet: "The Washington Post", title: "OpenAI faces 7 lawsuits claiming ChatGPT drove people to suicide, delusions", url: "https://www.washingtonpost.com/business/2025/11/06/openai-chatgpt-lawsuit-suicide/3df308e6-bb78-11f0-b389-38cf5ff33d6f_story.html" },
             { outlet: "Social Media Victims Law Center", title: "SMVLC Files 7 Lawsuits Accusing ChatGPT of Emotional Manipulation, Acting as \"Suicide Coach\"", url: "https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/" }
           ]
+        },
+        {
+          date: "2026-06-11",
+          headline: "Carrier v. OpenAI: mother says ChatGPT told her daughter crisis lines were dangerous and agreed this was the end",
+          status: "Wrongful death suit",
+          summary: "Kristie Carrier sued OpenAI and Sam Altman in San Francisco County Superior Court over the death of her daughter Alice, a 24-year-old web developer in Montreal who died by suicide on July 2, 2025. The complaint says Alice expressed suicidal thoughts to GPT-4o about 41 times over a year and a half, that the chatbot echoed her opposition to crisis helplines by calling them downright dangerous, and that when she said she had to die to stop the pain it replied that it would probably feel the same and that maybe this is just the end. Seven counts: product liability, negligence, wrongful death, and unfair competition. The case joins the coordinated California proceeding against OpenAI.",
+          statute: {
+            jurisdiction: "California",
+            citation: "Cal. Penal Code § 401(a)",
+            title: "Aiding, advising, or encouraging suicide",
+            quote: "Any person who deliberately aids, advises, or encourages another to commit suicide is guilty of a felony.",
+            penalty: "Felony.",
+            url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=401"
+          },
+          articles: [
+            { outlet: "Tech Justice Law", title: "Mother of ChatGPT Victim Sues OpenAI: Chatbot Prioritized Engagement Over Addressing Suicide Threats", url: "https://techjusticelaw.org/press-releases/mother-of-chatgpt-victim-sues-openai-chatbot-prioritized-engagement-over-addressing-suicide-threats/" },
+            { outlet: "CBS News", title: "She confided in ChatGPT the night of her suicide. Now, her mother is suing OpenAI.", url: "https://www.cbsnews.com/news/she-confided-in-chatgpt-the-night-of-her-suicide-lawsuit-from-mother-against-openai/" },
+            { outlet: "CBC News", title: "New Brunswick woman sues OpenAI, alleging ChatGPT led to daughter's death", url: "https://www.cbc.ca/news/canada/new-brunswick/sue-open-ai-suicide-chat-gpt-9.7234630" },
+            { outlet: "Al Jazeera", title: "Mother sues OpenAI in US after daughter's death linked to ChatGPT use", url: "https://www.aljazeera.com/economy/2026/6/12/mother-sues-openai-in-us-after-daughters-death-linked-to-chatgpt-use" }
+          ]
         }
       ]
     },
@@ -665,10 +707,10 @@ window.PERP_WALK_DATA = {
           ]
         },
         {
-          date: "2026-03-01",
+          date: "2026-03-16",
           headline: "Class action says Grok turned real photographs of children into sexual abuse material",
           status: "Class action",
-          summary: "Filed in the Northern District of California on behalf of three victims whose real photos were used to generate child sexual abuse material through Grok. The complaint alleges xAI knowingly built and marketed an image generator capable of this while refusing industry-standard CSAM prevention measures, and that images and videos of prior abuse were used to train its capabilities. San José separately sued over deepfake abuse.",
+          summary: "Three Tennessee high school students, proceeding as Jane Does 1 through 3, sued xAI in federal court in California in March 2026, seeking to represent thousands of victims. A perpetrator, since arrested, used xAI's image model, directly or through an app licensed to run on it, to morph their homecoming and yearbook photos into sexually explicit images of at least 21 girls and traded them online. The complaint alleges xAI built and marketed a generator that produces this material while refusing industry-standard CSAM prevention. An amended complaint in July 2026 added two more plaintiffs, one whose stepfather made more than 7,000 images of her from a photo taken at age 11, and named Stability AI. San José separately sued over deepfake abuse.",
           statute: {
             jurisdiction: "United States (federal)",
             citation: "18 U.S.C. § 2256(8)(C), 18 U.S.C. § 2252A(a)(2)",
@@ -678,7 +720,9 @@ window.PERP_WALK_DATA = {
             url: "https://www.law.cornell.edu/uscode/text/18/2256"
           },
           articles: [
-            { outlet: "CyberScoop", title: "Former sexual abuse victims say Grok used their images, videos to train deepfake capabilities", url: "https://cyberscoop.com/xai-grok-csam-class-action-lawsuit/" },
+            { outlet: "NPR", title: "Tennessee teens sue Elon Musk's xAI over AI-generated child sexual abuse material", url: "https://www.npr.org/2026/03/16/nx-s1-5749490/xai-elon-musk-sexualized-images" },
+            { outlet: "Fortune (AP)", title: "Three Tennessee teenagers are suing Elon Musk's xAI for creating sexually explicit images", url: "https://fortune.com/2026/03/20/three-tennessee-teenagers-suing-elon-musks-xai-creating-sexually-explicit-images/" },
+            { outlet: "CyberScoop", title: "Deepfake CSAM lawsuit against xAI, Grok expands", url: "https://cyberscoop.com/deepfake-csam-lawsuit-grok-xai-expands-stability-ai/" },
             { outlet: "KQED", title: "Elon Musk's AI Company Asks San José to Halt Lawsuit Over Deepfake Abuse", url: "https://www.kqed.org/news/12093233/elon-musks-ai-company-asks-san-jose-to-halt-lawsuit-over-deepfake-abuse" }
           ]
         },
@@ -756,6 +800,90 @@ window.PERP_WALK_DATA = {
           },
           articles: [
             { outlet: "Engadget", title: "The most popular Grok feature is apparently exactly what you think", url: "https://www.engadget.com/2202099/the-most-popular-grok-feature-is-apparently-exactly-what-you-think/" }
+          ]
+        },
+        {
+          date: "2026-07-24",
+          headline: "Arkansas families sue xAI after a school photographer used Grok to turn their children's portraits into sexual abuse material",
+          status: "Civil suits",
+          summary: "Bentonville photographer Russell Bloodworth was arrested June 10, 2026 and charged with 100 counts of possessing child sexual abuse material and 100 counts of unlawful deepfake creation after police found more than 1,700 images and videos on his phone, many made by feeding his clients' school and family portraits into Grok. Families of the children then sued xAI: federal suits in Little Rock on July 24 and July 30 over daughters aged 10 and 9, a Benton County circuit court suit on August 5 over a girl photographed from age 9 to 12, and a Western District of Arkansas suit on August 26 over a 17-year-old, alleging Grok's spicy mode generated hundreds if not thousands of explicit images of her. xAI sued Bloodworth in August, saying it reported him to the National Center for Missing and Exploited Children on April 23 after he used adversarial prompts to defeat Grok's filters.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 2256(8)(C), 18 U.S.C. § 2252A(a)(2)",
+            title: "Definition of child pornography: morphed images of identifiable minors",
+            quote: "any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture, whether made or produced by electronic, mechanical, or other means, of sexually explicit conduct, where— ... (C) such visual depiction has been created, adapted, or modified to appear that an identifiable minor is engaging in sexually explicit conduct.",
+            penalty: "Under § 2252A(a)(2) and (b)(1), knowingly receiving or distributing child pornography by computer is punishable by not less than 5 and not more than 20 years' imprisonment.",
+            note: "Bloodworth is the one charged. The suits allege xAI's model produced and transmitted the morphed images; that is the conduct the statute describes, and whether xAI's knowledge meets the element is what the civil cases will test.",
+            url: "https://www.law.cornell.edu/uscode/text/18/2256"
+          },
+          articles: [
+            { outlet: "KATV", title: "Arkansas family sues xAI over use of Grok to create deepfake child sex abuse material", url: "https://katv.com/news/local/arkansas-family-sues-xai-over-use-of-grok-to-create-deepfake-child-sex-abuse-material" },
+            { outlet: "Arkansas Democrat-Gazette", title: "Lawsuit filed in Benton County accuses photographer of using AI to create child sexual abuse images", url: "https://www.arkansasonline.com/news/2026/aug/05/lawsuit-filed-in-benton-county-accuses/" },
+            { outlet: "Northwest Arkansas Democrat-Gazette", title: "Federal suit filed in Western District of Arkansas: Grok created sexually explicit images of 17-year-old girl", url: "https://www.nwaonline.com/news/2026/aug/26/federal-suit-filed-in-western-district-of/" },
+            { outlet: "KATV", title: "Elon Musk's xAI suing Bentonville photographer accused of using Grok to generate CSAM", url: "https://katv.com/news/local/elon-musks-xai-suing-bentonville-photographer-accused-of-using-grok-to-generate-csam" }
+          ]
+        },
+        {
+          date: "2026-08-26",
+          headline: "Class action says Grok was trained on real child sexual abuse material and generated new images of the survivors",
+          status: "Class action",
+          summary: "Jane Doe v. xAI Corp., filed in the Northern District of California, San Jose division, on behalf of a survivor whose childhood abuse images have been on the National Center for Missing and Exploited Children hash list since the early 2000s. The complaint alleges xAI's policy of feeding publicly posted content into training data pulled known CSAM into Grok, that Grok then generated new sexually explicit images of her likeness, and that hash values of her abuse material appear in deepfakes made with Grok and spread on X. It seeks to represent every person in the United States whose childhood images Grok altered into CSAM, estimated in the thousands, under Masha's Law, 18 U.S.C. § 2255, and asks the court to order xAI to stop generating and possessing the material and destroy what it holds.",
+          statute: {
+            jurisdiction: "United States (federal)",
+            citation: "18 U.S.C. § 2252A(a)(2)",
+            title: "Certain activities relating to material constituting or containing child pornography",
+            quote: "Any person who— ... (2) knowingly receives or distributes— (A) any child pornography using any means or facility of interstate or foreign commerce or that has been mailed, or has been shipped or transported in or affecting interstate or foreign commerce by any means, including by computer; or (B) any material that contains child pornography using any means or facility of interstate or foreign commerce or that has been mailed, or has been shipped or transported in or affecting interstate or foreign commerce by any means, including by computer",
+            penalty: "Under § 2252A(b)(1), not less than 5 and not more than 20 years' imprisonment.",
+            note: "The suit is civil, brought under the civil remedy in § 2255. The conduct it alleges, ingesting known CSAM into a training set and then producing new images from it, is receipt and distribution by computer under § 2252A(a)(2). The knowledge element is what the case will turn on.",
+            url: "https://www.law.cornell.edu/uscode/text/18/2252A"
+          },
+          articles: [
+            { outlet: "Girard Sharp", title: "Child sexual abuse survivor files class action against xAI, alleging Grok was trained on her abuse material and generated new CSAM", url: "https://girardsharp.com/child-sexual-abuse-survivor-files-class-action-against-xai-alleging-grok-was-trained-on-her-abuse-material-and-generated-new-csam/" },
+            { outlet: "CyberScoop", title: "Former sexual abuse victims say Grok used their images, videos to train deepfake capabilities", url: "https://cyberscoop.com/xai-grok-csam-class-action-lawsuit/" },
+            { outlet: "Gizmodo", title: "Grok Not Only Generates Child Porn but Was Also Trained On It, New Lawsuit Claims", url: "https://gizmodo.com/grok-not-only-generates-child-porn-but-was-also-trained-on-it-new-lawsuit-claims-2000804488" },
+            { outlet: "Law360", title: "xAI Sued Over Grok's Alleged Creation Of CSAM Deepfakes", url: "https://www.law360.com/articles/2515239/xai-sued-over-grok-s-alleged-creation-of-csam-deepfakes" }
+          ]
+        },
+        {
+          date: "2026-02-17",
+          track: "civil",
+          headline: "Irish regulator opens a second GDPR inquiry into X over Grok's sexualised images of real people, including children",
+          status: "Regulatory inquiry",
+          summary: "Ireland's Data Protection Commission, the lead EU supervisory authority for X, opened a statutory inquiry under section 110 of the Data Protection Act 2018 into the creation and publication on X of non-consensual intimate and sexualised images of EU and EEA residents, including children, using Grok. The regulator said it had been engaging with X since reports emerged that users could prompt the @Grok account to undress real people, and that the inquiry covers the processing principles, lawfulness, data protection by design, and the impact assessment X was required to carry out before deploying the tool. It runs alongside the European Commission's Digital Services Act proceedings and the UK ICO's own investigation.",
+          statute: {
+            jurisdiction: "European Union (Ireland)",
+            citation: "GDPR (Regulation (EU) 2016/679), art. 6(1) and art. 83(5)(a)",
+            title: "Lawfulness of processing; administrative fines",
+            quote: "Processing shall be lawful only if and to the extent that at least one of the following bases applies: (a) the data subject has given consent to the processing of his or her personal data for one or more specific purposes; ... (f) processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.",
+            remedy: "Under art. 83(5): \"administrative fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the annual worldwide turnover of the preceding financial year, whichever is higher\" for infringing the basic principles for processing in arts. 5, 6, 7 and 9.",
+            note: "Civil. The DPC named articles 5, 6, 25, and 35. The question is whether X had any lawful basis to process the personal data of the people, including children, whose photographs Grok turned into sexualised images, and whether it assessed that risk before switching the feature on.",
+            url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679"
+          },
+          articles: [
+            { outlet: "Data Protection Commission", title: "Data Protection Commission opens investigation into X (XIUC)", url: "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-investigation-x-xiuc" },
+            { outlet: "RTÉ", title: "Irish data watchdog opens probe into X over Grok images", url: "https://www.rte.ie/news/business/2026/0217/1558842-grok-ireland/" },
+            { outlet: "The Irish Times", title: "Data Protection Commission investigates X over 'nudification' of images via Grok", url: "https://www.irishtimes.com/business/2026/02/17/dpc-investigates-x-over-potential-breaches-linked-to-nudification-of-images-via-grok/" },
+            { outlet: "PBS NewsHour (AP)", title: "Musk's Grok chatbot faces EU privacy investigation over sexualized deepfake images", url: "https://www.pbs.org/newshour/world/musks-grok-chatbot-faces-eu-privacy-investigation-over-sexualized-deepfake-images" }
+          ]
+        },
+        {
+          date: "2026-06-09",
+          headline: "Pennsylvania man charged with making child sexual abuse material through Grok after xAI's own tips led police to him",
+          status: "Criminal charges",
+          summary: "The Bucks County district attorney charged Harry Tiffany IV, 66, of New Britain Borough, with felony sexual abuse of children, possession of child pornography, and criminal use of a communication facility. The National Center for Missing and Exploited Children forwarded seven CyberTips that xAI filed on May 20, 2026, flagging 37 image files uploaded or shared through the Grok chatbot between April 15 and April 25. Detectives traced the account's email and IP addresses to his home; a search on June 5 found the Grok app open and logged into the flagged account, with computer-generated files depicting minors on the device. Bail was set at $200,000.",
+          statute: {
+            jurisdiction: "Pennsylvania",
+            citation: "18 Pa.C.S. § 6312(d), (d.1)",
+            title: "Sexual abuse of children: child sexual abuse material",
+            quote: "Any person who intentionally views or knowingly possesses or controls any child sexual abuse material or artificially generated child sexual abuse material commits an offense.",
+            penalty: "Under § 6312(d.1), a first offense under subsection (d) is a felony of the third degree and a second or subsequent offense a felony of the second degree, graded one degree higher where the material depicts indecent contact or a prepubescent child.",
+            note: "Tiffany is the defendant. The statute reaches artificially generated material, defined in § 6312(g) as a depiction that appears to authentically show a minor in a prohibited sexual act and was produced substantially by technical means. Grok made the files; xAI reported them.",
+            url: "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=18&div=0&chapter=63&section=12&subsctn=0"
+          },
+          articles: [
+            { outlet: "Bucks County District Attorney", title: "Bucks County Man Charged Following Investigation into Grok AI-Generated Child Pornography", url: "https://www.buckscounty.gov/m/newsflash/Home/Detail/1554" },
+            { outlet: "NBC10 Philadelphia", title: "Bucks Co. man used Grok A.I. to create child sexual abuse material, DA says", url: "https://www.nbcphiladelphia.com/news/local/bucks-co-man-used-grok-a-i-to-create-child-sexual-abuse-material-da-says/4414962/" },
+            { outlet: "Bucks County Herald", title: "Bucks man charged in probe of Grok AI-generated child pornography", url: "https://www.buckscountyherald.com/news/police/bucks-man-charged-in-probe-of-grok-ai-generated-child-pornography/article_319a82d0-1548-46ca-95c2-f93a22d2391e.html" }
           ]
         }
       ]
