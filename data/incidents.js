@@ -843,6 +843,48 @@ window.PERP_WALK_DATA = {
             { outlet: "Gizmodo", title: "Grok Not Only Generates Child Porn but Was Also Trained On It, New Lawsuit Claims", url: "https://gizmodo.com/grok-not-only-generates-child-porn-but-was-also-trained-on-it-new-lawsuit-claims-2000804488" },
             { outlet: "Law360", title: "xAI Sued Over Grok's Alleged Creation Of CSAM Deepfakes", url: "https://www.law360.com/articles/2515239/xai-sued-over-grok-s-alleged-creation-of-csam-deepfakes" }
           ]
+        },
+        {
+          date: "2026-02-17",
+          track: "civil",
+          headline: "Irish regulator opens a second GDPR inquiry into X over Grok's sexualised images of real people, including children",
+          status: "Regulatory inquiry",
+          summary: "Ireland's Data Protection Commission, the lead EU supervisory authority for X, opened a statutory inquiry under section 110 of the Data Protection Act 2018 into the creation and publication on X of non-consensual intimate and sexualised images of EU and EEA residents, including children, using Grok. The regulator said it had been engaging with X since reports emerged that users could prompt the @Grok account to undress real people, and that the inquiry covers the processing principles, lawfulness, data protection by design, and the impact assessment X was required to carry out before deploying the tool. It runs alongside the European Commission's Digital Services Act proceedings and the UK ICO's own investigation.",
+          statute: {
+            jurisdiction: "European Union (Ireland)",
+            citation: "GDPR (Regulation (EU) 2016/679), art. 6(1) and art. 83(5)(a)",
+            title: "Lawfulness of processing; administrative fines",
+            quote: "Processing shall be lawful only if and to the extent that at least one of the following bases applies: (a) the data subject has given consent to the processing of his or her personal data for one or more specific purposes; ... (f) processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.",
+            remedy: "Under art. 83(5): \"administrative fines up to 20,000,000 EUR, or in the case of an undertaking, up to 4% of the annual worldwide turnover of the preceding financial year, whichever is higher\" for infringing the basic principles for processing in arts. 5, 6, 7 and 9.",
+            note: "Civil. The DPC named articles 5, 6, 25, and 35. The question is whether X had any lawful basis to process the personal data of the people, including children, whose photographs Grok turned into sexualised images, and whether it assessed that risk before switching the feature on.",
+            url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679"
+          },
+          articles: [
+            { outlet: "Data Protection Commission", title: "Data Protection Commission opens investigation into X (XIUC)", url: "https://www.dataprotection.ie/en/news-media/press-releases/data-protection-commission-opens-investigation-x-xiuc" },
+            { outlet: "RTÉ", title: "Irish data watchdog opens probe into X over Grok images", url: "https://www.rte.ie/news/business/2026/0217/1558842-grok-ireland/" },
+            { outlet: "The Irish Times", title: "Data Protection Commission investigates X over 'nudification' of images via Grok", url: "https://www.irishtimes.com/business/2026/02/17/dpc-investigates-x-over-potential-breaches-linked-to-nudification-of-images-via-grok/" },
+            { outlet: "PBS NewsHour (AP)", title: "Musk's Grok chatbot faces EU privacy investigation over sexualized deepfake images", url: "https://www.pbs.org/newshour/world/musks-grok-chatbot-faces-eu-privacy-investigation-over-sexualized-deepfake-images" }
+          ]
+        },
+        {
+          date: "2026-06-09",
+          headline: "Pennsylvania man charged with making child sexual abuse material through Grok after xAI's own tips led police to him",
+          status: "Criminal charges",
+          summary: "The Bucks County district attorney charged Harry Tiffany IV, 66, of New Britain Borough, with felony sexual abuse of children, possession of child pornography, and criminal use of a communication facility. The National Center for Missing and Exploited Children forwarded seven CyberTips that xAI filed on May 20, 2026, flagging 37 image files uploaded or shared through the Grok chatbot between April 15 and April 25. Detectives traced the account's email and IP addresses to his home; a search on June 5 found the Grok app open and logged into the flagged account, with computer-generated files depicting minors on the device. Bail was set at $200,000.",
+          statute: {
+            jurisdiction: "Pennsylvania",
+            citation: "18 Pa.C.S. § 6312(d), (d.1)",
+            title: "Sexual abuse of children: child sexual abuse material",
+            quote: "Any person who intentionally views or knowingly possesses or controls any child sexual abuse material or artificially generated child sexual abuse material commits an offense.",
+            penalty: "Under § 6312(d.1), a first offense under subsection (d) is a felony of the third degree and a second or subsequent offense a felony of the second degree, graded one degree higher where the material depicts indecent contact or a prepubescent child.",
+            note: "Tiffany is the defendant. The statute reaches artificially generated material, defined in § 6312(g) as a depiction that appears to authentically show a minor in a prohibited sexual act and was produced substantially by technical means. Grok made the files; xAI reported them.",
+            url: "https://www.palegis.us/statutes/consolidated/view-statute?txtType=HTM&ttl=18&div=0&chapter=63&section=12&subsctn=0"
+          },
+          articles: [
+            { outlet: "Bucks County District Attorney", title: "Bucks County Man Charged Following Investigation into Grok AI-Generated Child Pornography", url: "https://www.buckscounty.gov/m/newsflash/Home/Detail/1554" },
+            { outlet: "NBC10 Philadelphia", title: "Bucks Co. man used Grok A.I. to create child sexual abuse material, DA says", url: "https://www.nbcphiladelphia.com/news/local/bucks-co-man-used-grok-a-i-to-create-child-sexual-abuse-material-da-says/4414962/" },
+            { outlet: "Bucks County Herald", title: "Bucks man charged in probe of Grok AI-generated child pornography", url: "https://www.buckscountyherald.com/news/police/bucks-man-charged-in-probe-of-grok-ai-generated-child-pornography/article_319a82d0-1548-46ca-95c2-f93a22d2391e.html" }
+          ]
         }
       ]
     },
